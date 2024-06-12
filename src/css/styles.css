@@ -1,25 +1,121 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
 @import url('./reset.css');
-@import url('./vite-promo.css');
 @import url('./header.css');
+@import url('./hero.css');
+@import url('./about.css');
+@import url('./tech_skills.css');
+@import url('./projects.css');
+@import url('./benefits.css');
+@import url('./faq.css');
+@import url('./reviews.css');
+@import url('./work_together.css');
+@import url('./footer.css');
+
+@font-face {
+  font-family: 'Impact';
+  src: url('../fonts/impact.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/Poppins-Light.ttf') format('truetype'),
+    url('../fonts/Poppins-Medium.ttf') format('truetype'),
+    url('../fonts/Poppins-Regular.ttf') format('truetype'),
+    url('../fonts/Poppins-SemiBold.ttf') format('truetype');
+  font-style: normal;
+}
 
 :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Poppins, Impact, Montserrat, Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
 
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
+  /* light color vars */
+  --Black: #292929;
+  --Accent-green: #00b068;
+  --White: #f0f0f0;
+  --Light-grey: #e4e5e6;
+  --Light-accent: #bcdfd1;
+  --Error-light: #e74a3b;
+
+  --accent-light1: #00b068;
+  --accent-light2: #00b068;
+  --accent-light3: #286099;
+  --accent-light4: #603799;
+  --accent-light5: #a13997;
+  --accent-light6: #de4f69;
+
+  /* dark color vars */
+  --Black-dark: #1e2023;
+  --Accent-green-dark: #14c57c;
+  --Dark-grey: #2a2d32;
+  --Dark-accent: #204136;
+  --Error-dark: #f05748;
+
+  --accent-dark1: #14c57c;
+  --accent-dark2: #26bdb0;
+  --accent-dark3: #378ee5;
+  --accent-dark4: #925ae0;
+  --accent-dark5: #c156d6;
+  --accent-dark6: #f7546d;
+
+  color: var(--Black);
+  background-color: var(--White);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.section {
+  padding: 80px 0;
+}
+.container {
+  max-width: 360px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .section {
+    padding: 120px 0;
+  }
+
+  .container {
+    max-width: 768px;
+    padding: 0px 32px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .section {
+    padding: 164px 0;
+  }
+
+  .container {
+    max-width: 1280px;
+    padding: 0 32px;
+  }
 }

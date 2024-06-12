@@ -1,7 +1,7 @@
-.header.section {
+.projects.section {
   outline: 1px solid tomato;
 }
 
-.header .container {
+.projects .container {
   outline: 1px solid cyan;
 }
