@@ -5,3 +5,94 @@
 .benefits .container {
   outline: 1px solid cyan;
 }
+
+.benefits-title {
+  font-family: Impact;
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 64px; /* 123.077% */
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.benefits-decor-img {
+  display: none;
+}
+
+.benefits-span-title {
+  color: var(--Accent-green);
+}
+
+.benefits-subtitle {
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 155.556% */
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+li > .benefits-text {
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.5px;
+  margin-bottom: 32px;
+}
+
+li > .text-last {
+  margin-bottom: 0px;
+}
+
+.benefits-wrap-icon {
+  display: flex;
+  width: 48px;
+  height: 48px;
+  padding: 12px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background: rgba(0, 176, 104, 0.1);
+  margin-bottom: 16px;
+}
+
+.benefits-icon {
+  stroke: var(--Accent-green);
+  fill: transparent;
+}
+
+/* ================= */
+
+@media screen and (min-width: 768px) {
+  .benefits-title {
+    font-size: 108px;
+    font-weight: 400;
+    line-height: 124px; /* 114.815% */
+    margin-bottom: 0px;
+  }
+
+  .benefits-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+
+  .benefits-item {
+    width: 336px;
+    flex: 0 0 auto;
+  }
+
+  .flex-item {
+    margin-left: auto;
+  }
+
+  .flex-wraper {
+    flex-basis: 100%;
+  }
+}
