@@ -24,10 +24,29 @@
 
 @font-face {
   font-family: 'Poppins';
-  src: url('../fonts/Poppins-Light.ttf') format('truetype'),
-    url('../fonts/Poppins-Medium.ttf') format('truetype'),
-    url('../fonts/Poppins-Regular.ttf') format('truetype'),
-    url('../fonts/Poppins-SemiBold.ttf') format('truetype');
+  src: url('../fonts/Poppins-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/Poppins-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/Poppins-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/Poppins-SemiBold.ttf') format('truetype');
+  font-weight: 600;
   font-style: normal;
 }
 
@@ -37,34 +56,20 @@
   line-height: 24px;
   font-weight: 400;
 
-  /* light color vars */
-  --Black: #292929;
-  --Accent-green: #00b068;
   --White: #f0f0f0;
-  --Light-grey: #e4e5e6;
-  --Light-accent: #bcdfd1;
-  --Error-light: #e74a3b;
+  --Black: #292929;
+  --Error: #e74a3b;
+  --Accent-hover: #009156;
+  --Accent-tertiary: #e4e5e6;
+  --Accent-secondary: #bcdfd1;
+  --Accent-green: #00b068;
 
-  --accent-light1: #00b068;
-  --accent-light2: #00b068;
-  --accent-light3: #286099;
-  --accent-light4: #603799;
-  --accent-light5: #a13997;
-  --accent-light6: #de4f69;
-
-  /* dark color vars */
-  --Black-dark: #1e2023;
-  --Accent-green-dark: #14c57c;
-  --Dark-grey: #2a2d32;
-  --Dark-accent: #204136;
-  --Error-dark: #f05748;
-
-  --accent-dark1: #14c57c;
-  --accent-dark2: #26bdb0;
-  --accent-dark3: #378ee5;
-  --accent-dark4: #925ae0;
-  --accent-dark5: #c156d6;
-  --accent-dark6: #f7546d;
+  --accent-1: #00b068;
+  --accent-2: #289990;
+  --accent-3: #286099;
+  --accent-4: #603799;
+  --accent-5: #a13997;
+  --accent-6: #de4f69;
 
   color: var(--Black);
   background-color: var(--White);
@@ -74,6 +79,23 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+  transition: all 0.3s ease;
+}
+
+.dark-theme {
+  --Black: #1e2023;
+  --Error: #f05748;
+  --Accent-hover: #009156;
+  --Accent-tertiary: #2a2d32;
+  --Accent-secondary: #204136;
+  --Accent-primary: #14c57c;
+
+  --accent-1: #14c57c;
+  --accent-2: #26bdb0;
+  --accent-3: #378ee5;
+  --accent-4: #925ae0;
+  --accent-5: #c156d6;
+  --accent-6: #f7546d;
 }
 
 .visually-hidden {
