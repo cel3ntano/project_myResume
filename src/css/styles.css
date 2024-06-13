@@ -97,6 +97,9 @@
   --accent-4: #925ae0;
   --accent-5: #c156d6;
   --accent-6: #f7546d;
+
+  color: var(--Black);
+  background-color: var(--White);
 }
 
 .visually-hidden {
