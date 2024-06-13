@@ -7,9 +7,9 @@
     <title>Ready! Steady! Go!</title>
     
     <script type="module" crossorigin src="/project_myResume/commonHelpers.js"></script>
-    <link rel="modulepreload" crossorigin href="/project_myResume/assets/vendor-b7a4355b.js">
-    <link rel="stylesheet" href="/project_myResume/assets/vendor-c3df10e2.css">
-    <link rel="stylesheet" href="/project_myResume/assets/index-4ad43b8a.css">
+    <link rel="modulepreload" crossorigin href="/project_myResume/assets/vendor-3f8040e3.js">
+    <link rel="stylesheet" href="/project_myResume/assets/vendor-06b6cc81.css">
+    <link rel="stylesheet" href="/project_myResume/assets/index-ed557322.css">
   </head>
   <body>
     <header class="header">
@@ -638,7 +638,29 @@
 
       <section class="reviews section">
   <div class="container">
-    <p>Reviews</p>
+    <h2 class="reviews__h2">Reviews</h2>
+    <div class="swiper reviews__swiper">
+      <div class="reviews__list swiper-wrapper"></div>
+      <div class="reviews__arrow">
+        <div>
+          <button
+            type="button"
+            class="swiper-button-prev reviews__arrow-left disabled_btn"
+          >
+            <svg width="24" height="24">
+              <use href="../img/icons.svg#icon-button-review-left"></use>
+            </svg>
+          </button>
+        </div>
+        <div>
+          <button type="button" class="swiper-button-next reviews__arrow-right">
+            <svg width="24" height="24">
+              <use href="../img/icons.svg#icon-button-review-right"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
