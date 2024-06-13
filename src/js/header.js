@@ -1,20 +1,14 @@
-const burger = document.querySelector('.switch-burger');
-const svgUse = document.querySelector('.inform-item-icon');
+const burgerOpen = document.querySelector('.switch-open-burger');
+const burgerClose = document.querySelector('.switch-close-burger');
 const nav = document.querySelector('.header-nav');
-
-const openBurger = '../img/icons.svg#icon-open-burger';
-const closeBurger = '../img/icons.svg#icon-close-burger';
 
 const toggleImage = e => {
   e.preventDefault();
 
-  if (svgUse.getAttribute('href') === openBurger) {
-    nav.style.display = 'flex';
-    return svgUse.setAttribute('href', closeBurger);
-  }
-
-  nav.style.display = 'none';
-  svgUse.setAttribute('href', openBurger);
+  burgerClose.classList.toggle('active-btn');
+  burgerOpen.classList.toggle('active-btn');
+  nav.classList.toggle('active-nav');
 };
 
-burger.addEventListener('click', toggleImage);
+burgerOpen.addEventListener('click', toggleImage);
+burgerClose.addEventListener('click', toggleImage);

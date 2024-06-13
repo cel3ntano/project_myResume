@@ -1,4 +1,5 @@
 .header {
+  z-index: 999;
   text-align: center;
   position: fixed;
   padding: 0 20px;
@@ -20,12 +21,22 @@
   justify-content: space-between;
 }
 
-.switch-burger {
-  /* text-indent: -9999px; */
+.switch-open-burger {
   text-align: center;
   border: none;
-  display: flex;
+  display: none;
   align-items: center;
+}
+
+.switch-close-burger {
+  text-align: center;
+  border: none;
+  display: none;
+  align-items: center;
+}
+
+.active-btn {
+  display: flex;
 }
 
 .icon-burger {
@@ -48,6 +59,10 @@
   height: 100vh;
   background: url(../img/header/points1.png), var(--White);
   background-repeat: no-repeat;
+}
+
+.active-nav {
+  display: flex;
 }
 
 .nav-list {
@@ -123,9 +138,6 @@
   padding: 2px;
   width: 48px;
   height: 24px;
-  /* background-color: var(--Accent-tertiary
-); */
-  /* border-radius: 12px; */
 }
 
 .switch-theme {
