@@ -18,3 +18,4 @@ const toggleImage = e => {
 };
 
 burger.addEventListener('click', toggleImage);
+
