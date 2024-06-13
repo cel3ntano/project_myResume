@@ -9,15 +9,50 @@
     <script type="module" crossorigin src="/project_myResume/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/project_myResume/assets/vendor-b7a4355b.js">
     <link rel="stylesheet" href="/project_myResume/assets/vendor-c3df10e2.css">
-    <link rel="stylesheet" href="/project_myResume/assets/index-d81b41ed.css">
+    <link rel="stylesheet" href="/project_myResume/assets/index-c9816171.css">
   </head>
   <body>
-    <header class="header section">
+    <header class="header">
   <div class="container">
-    <p>Header</p>
+    <div class="header-mobile-container">
+      <h2 class="header-title">
+        <a class="header-title-link" href="#">
+          lloyd<span class="header-surname-colored">Jefferson.</span>
+        </a>
+      </h2>
+      <button class="switch-burger" data-img="icon-open-burger">
+        <svg class="icon icon-burger" width="32" height="32">
+          <use
+            class="inform-item-icon"
+            href="/project_myResume/assets/icons-de8f1dbd.svg#icon-open-burger"
+          ></use>
+        </svg>
+      </button>
+    </div>
+    <nav class="header-nav">
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a href="#" class="nav-link">About me</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Contacts</a>
+        </li>
+      </ul>
+    </nav>
   </div>
 </header>
-
+<label for="theme-btn" class="theme">
+  <input
+    type="checkbox"
+    name="switchTheme"
+    id="theme-btn"
+    class="visually-hidden theme-btn"
+  />
+  <span class="switch-theme"></span>
+</label>
     <main>
       <section class="hero section">
   <div class="container">
@@ -349,6 +384,7 @@
   </div>
 </footer>
 
+    
     
     
     
