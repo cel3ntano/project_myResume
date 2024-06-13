@@ -83,7 +83,8 @@
 }
 
 .dark-theme {
-  --Black: #1e2023;
+  --Black: #f0f0f0;
+  --White: #1e2023;
   --Error: #f05748;
   --Accent-hover: #009156;
   --Accent-tertiary: #2a2d32;
