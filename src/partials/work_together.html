@@ -1,5 +1,47 @@
-<section class="work-together section">
+<section class="work-together section " id="work-together">
+
   <div class="container">
-    <p>Work together</p>
+    <div class="contact-form">
+      <div class="decor-bg"></div>
+      <h1 class="work-together-div">let's <span>work together</span></h1>
+      <div class="flex1280">
+        <div class="content-contact">
+          <p class="description">contact me to transform your ideas into exceptional solutions.</p>
+          <div class="contact-info">
+            <ul class="contact-form-item">
+              <li class="contact-form-list">
+                <a class="contact-form-list-link" href="tel:+380904567890">
+                  <svg class="contact-form-icon" width="24" height="24">
+                    <use href="./img/icons.svg#icon-phone"></use>
+                  </svg>+38 090 456 78 90</a>
+              </li>
+              <li class="contact-form-list">
+                <a class="contact-form-list-link" href="mailto:lloydjefferson@gmail.com"><svg class="contact-form-icon"
+                    width="24" height="24">
+                    <use href="./img/icons.svg#icon-email"></use>
+                  </svg>lloydjefferson@gmail.com</a>
+              </li>
+              <li class="contact-form-list">
+                <a class="contact-form-list-link" href="">
+                  <svg class="contact-form-icon" width="24" height="24">
+                    <use href="./img/icons.svg#icon-location"></use>
+                  </svg>SA, New York</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <form class="orrder-form" action="your-backend-endpoint" method="POST">
+          <div class="container-input-form">
+            <label class="email-user"></label>
+            <input type="email" name="email" pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" required
+              class="order-input" id="email-user" placeholder="Your email*" />
+            <label class="comment"></label>
+            <textarea name="message" id="comment" rows="5" class="textarea" placeholder="Message"></textarea>
+          </div>
+
+          <button type="submit">SEND MESSAGE</button>
+        </form>
+      </div>
+    </div>
   </div>
 </section>
