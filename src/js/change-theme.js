@@ -1,9 +1,31 @@
-const switcher = document.querySelector('.theme-btn')
-const switchThem = document.querySelector('.switch-theme')
+const switcher = document.querySelector('.theme-btn');
+const switchThem = document.querySelector('.switch-theme');
+const body = document.body;
+
+const toggleBodyClass = () => {
+  body.classList.toggle('dark-theme');
+};
+
+const toggleSwitcherClass = () => {
+  switchThem.classList.toggle('edit-circle');
+};
+
+document.addEventListener('DOMContentLoaded', () => {
+  const statusThem = localStorage.getItem('statusThem');
+
+  if (statusThem === 'true') {
+    switcher.checked = true;
+    toggleSwitcherClass();
+    toggleBodyClass();
+  }
+});
 
 const changeThem = () => {
-    console.log(switchThem.classList);
-    switchThem.classList.toggle('edit-circle')
-}
+  toggleSwitcherClass();
+  toggleBodyClass();
 
-switcher.addEventListener('change', changeThem)
+  const statusThem = switchThem.classList.length > 1;
+  localStorage.setItem('statusThem', statusThem);
+};
+
+switcher.addEventListener('change', changeThem);
