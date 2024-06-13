@@ -9,14 +9,14 @@
     <script type="module" crossorigin src="/project_myResume/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/project_myResume/assets/vendor-b7a4355b.js">
     <link rel="stylesheet" href="/project_myResume/assets/vendor-c3df10e2.css">
-    <link rel="stylesheet" href="/project_myResume/assets/index-f273d197.css">
+    <link rel="stylesheet" href="/project_myResume/assets/index-f6b44eda.css">
   </head>
   <body>
     <header class="header">
   <div class="container">
     <div class="header-mobile-container">
       <h2 class="header-title">
-        <a class="header-title-link" href="#">
+        <a class="header-title-link" href="">
           lloyd<span class="header-surname-colored">Jefferson.</span>
         </a>
       </h2>
@@ -39,28 +39,30 @@
     </div>
     <nav class="header-nav">
       <ul class="nav-list">
-        <li class="nav-item">
-          <a href="#" class="nav-link">About me</a>
+        <li class="therme-mobile">
+          <label for="theme-btn" class="theme">
+            <input
+              type="checkbox"
+              name="switchTheme"
+              id="theme-btn"
+              class="visually-hidden theme-btn"
+            />
+            <span class="switch-theme"></span>
+          </label>
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-link">Projects</a>
+          <a href="#about" class="nav-link">About me</a>
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-link">Contacts</a>
+          <a href="#project" class="nav-link">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a href="#contacts" class="nav-link">Contacts</a>
         </li>
       </ul>
     </nav>
   </div>
 </header>
-<!-- <label for="theme-btn" class="theme">
-  <input
-    type="checkbox"
-    name="switchTheme"
-    id="theme-btn"
-    class="visually-hidden theme-btn"
-  />
-  <span class="switch-theme"></span>
-</label> -->
 
     <main>
       <section class="hero section">
@@ -390,6 +392,7 @@
   </div>
 </footer>
 
+    
     
     
     
