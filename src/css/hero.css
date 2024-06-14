@@ -253,7 +253,7 @@
   }
   .hero-button:hover .hero-button-spot {
     /* background-color: var(--Accent-primary); */
-    background-color: rgba(0, 176, 104, 0.6);
+    background-color: var(--Accent-hover-secondary);
     width: 414px;
   }
 
