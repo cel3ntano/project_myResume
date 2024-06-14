@@ -19,7 +19,7 @@
   font-family: Impact;
   font-size: 32px;
   line-height: 1;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 .text-surname {
@@ -27,14 +27,14 @@
   font-family: Impact;
   font-size: 32px;
   line-height: 1;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 .footer-social-networks {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 24px;
+  gap: 40px;
 }
 @media screen and (min-width: 1280px) {
   .footer-social-networks {
@@ -66,21 +66,20 @@
   font-family: Poppins;
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.03em;
 }
 
 .text-footer {
-  color: #292929;
+  color: var(--Black, #292929);
   text-align: center;
-  font-family: Poppins;
-  font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.08em;
-  max-width: 197px;
+  max-width: 200px;
   margin: 0 auto;
 }
 @media screen and (min-width: 768px) {
   .text-footer {
-    margin-left: auto;
+    max-width: 200px;
+    margin: 0 auto;
   }
 }
