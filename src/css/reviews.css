@@ -9,7 +9,7 @@
 }
 
 .reviews__h2 {
-  color: var(--Black, #292929);
+  color: var(--Black);
   font-family: Impact;
   font-size: 52px;
   font-style: normal;
@@ -18,22 +18,15 @@
   letter-spacing: 1.8px;
   text-transform: uppercase;
   text-align: center;
-}
-
-.reviews__list {
-  margin: 32px 0;
+  margin-bottom: 40px;
 }
 
 .reviews__item {
   height: auto !important;
-  display: flex;
-  width: 320px;
   padding: 32px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 24px;
+  align-content: space-between;
   border-radius: 16px;
-  background: var(--Light-grey, #e4e5e6);
+  background: var(-Accent-tertiary);
 }
 
 .reviews__person {
@@ -50,7 +43,7 @@
 }
 
 .reviews__h3 {
-  color: var(--Black, #292929);
+  color: var(--Black);
   font-family: Poppins;
   font-size: 16px;
   font-style: normal;
@@ -60,7 +53,7 @@
 }
 
 .reviews__descr {
-  color: var(--Black, #292929);
+  color: var(--Black);
   font-family: Poppins;
   font-size: 16px;
   font-style: normal;
@@ -74,6 +67,7 @@
   justify-content: flex-end;
   align-items: flex-start;
   gap: 16px;
+  margin-top: 24px;
 }
 
 .reviews__arrow-left,
@@ -86,14 +80,42 @@
   align-items: center;
   gap: 10px;
   border-radius: 8px;
+  /* border: 1px solid rgba(41, 41, 41, 0.1); */
+  border: 1px solid var(--Button);
+  stroke: var(--Black);
+  fill: transparent;
+}
+
+.reviews__arrow-left:hover,
+.reviews__arrow-right:hover {
+  background: var(-Accent-tertiary);
+}
+
+.disabled_btn {
   border: 1px solid rgba(41, 41, 41, 0.1);
+  stroke: #cccccc;
 }
 
-/* .disabled_btn {
-} */
-
-@media (min-width: 768px) {
+.swiper-button-next,
+.swiper-button-prev {
+  color: transparent;
 }
 
 @media (min-width: 768px) {
+  .reviews__h2 {
+    font-size: 108px;
+    font-style: normal;
+    line-height: 124px;
+    margin-bottom: 60px;
+  }
+}
+
+@media (min-width: 768px) {
+  .reviews__h2 {
+    margin-bottom: 80px;
+  }
+
+  .reviews__arrow {
+    gap: 24px;
+  }
 }
