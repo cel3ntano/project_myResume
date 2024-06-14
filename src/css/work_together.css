@@ -3,6 +3,7 @@
 
 }
 
+
 .work-together .container {
   outline: 1px solid cyan;
 }
@@ -49,6 +50,10 @@
   list-style-type: none;
   padding: 0;
   margin: 0;
+}
+
+.contact-form {
+  position: relative;
 }
 
 .contact-form-list {
@@ -168,6 +173,34 @@ button[type="submit"]:hover {
   color: var(--Accent-hover);
 }
 
+.email-input-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.valid-icon {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: none;
+  fill: var(--Accent-primary);
+  z-index: 0;
+
+}
+
+.order-input.invalid {
+  border-color: var(--Error);
+  color: var(--Error);
+}
+
+.order-input.valid {
+  border-color: var(--Accent-primary);
+}
+
+.order-input.valid~.valid-icon {
+  display: block;
+}
 
 /* modal */
 
@@ -292,8 +325,10 @@ button[type="submit"]:hover {
     position: absolute;
     width: 336px;
     height: 266px;
-    top: 15px;
-    right: 20px;
+    /* top: 15px;
+    right: 20px; */
+    top: -104px;
+    right: 0px;
     z-index: 0;
     background: url(../img/work\ together/decor-bg.png) no-repeat center center;
     background-size: cover;
@@ -366,11 +401,14 @@ button[type="submit"]:hover {
     position: absolute;
     width: 536px;
     height: 416px;
-    top: 10px;
-    right: 10px;
+    /* top: 10px;
+    right: 10px; */
+    top: -144px;
+    right: 0px;
     z-index: 0;
     background: url(../img/work\ together/decor-bg-4.png) no-repeat center center;
     background-size: cover;
+
   }
 
   .orrder-form {
