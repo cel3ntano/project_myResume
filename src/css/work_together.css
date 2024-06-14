@@ -1,7 +1,379 @@
 .work-together.section {
   outline: 1px solid tomato;
+
 }
 
 .work-together .container {
   outline: 1px solid cyan;
+}
+
+
+.work-together-div {
+  color: var(--Black, #292929);
+  font-family: Impact;
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 1.23;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.work-together span {
+  color: var(--Accent-primary)
+}
+
+.description {
+  text-align: left;
+  color: var(--Black, #292929);
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.55;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+
+
+
+.contact-info {
+  text-align: left;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+.contact-info ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-form-list {
+  color: var(--Black, #292929);
+  transition: background-color 0.3s;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+
+}
+
+.contact-info .contact-form-list-link {
+  color: var(--Black, #292929);
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.contact-form-icon {
+  margin-right: 16px;
+  fill: none;
+  stroke: var(--Accent-primary)
+}
+
+.order-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form-item {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.container-input-form {
+  margin-bottom: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 32px;
+}
+
+.order-input {
+  padding: 16px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  background: var(--Accent-tertiary);
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.order-input::placeholder {
+  color: Accent-tertiary;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+}
+
+.textarea {
+  width: 100%;
+  padding: 16px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  background: var(--Accent-tertiary);
+  box-sizing: border-box;
+
+}
+
+.textarea::placeholder {
+  color: Accent-tertiary;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+}
+
+.order-input:focus,
+.textarea:focus {
+  border-color: green;
+  outline: none;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--Accent-primary);
+  color: #F0F0F0;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: var(--Accent-hover);
+}
+
+.contact-form-list-link:hover {
+  color: var(--Accent-hover);
+}
+
+
+/* modal */
+
+.modal-work {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+.modal-content-work {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 320px;
+  height: 328px;
+  padding: 48px 32px;
+  background-color: var(--White);
+  border: 1px solid transparent;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  position: relative;
+
+}
+
+.modal-work-text {
+  margin: 0 0 16px 0;
+  text-align: center;
+  color: var(--Accent-primary);
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.modal-work-text-p {
+  color: var(--Black, #292929);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5;
+  letter-spacing: 0.025em;
+}
+
+.close-modal-work {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.modal-icon-work {
+  fill: var(--Black, #292929);
+  stroke: var(--Black, #292929);
+}
+
+.body-no-scroll {
+  overflow: hidden;
+}
+
+
+
+
+@media screen and (min-width: 768px) {
+  .work-together-div {
+    font-size: 108px;
+    font-weight: 400;
+    line-height: 1.14;
+    letter-spacing: 1.8px;
+    letter-spacing: 0.02em;
+    margin-bottom: 60px;
+  }
+
+  .description {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.6;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+    width: 488px;
+  }
+
+  .contact-info .contact-form-list-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact-info {
+    margin-bottom: 60px;
+  }
+
+  .container-input-form {
+    margin-bottom: 32px;
+  }
+
+  button[type="submit"] {
+    width: 173px;
+  }
+
+  .work-together {
+    position: relative;
+    width: 100%;
+    height: 1015px;
+    background-color: #f0f0f0;
+
+  }
+
+  #work-together .decor-bg {
+    position: absolute;
+    width: 336px;
+    height: 266px;
+    top: 15px;
+    right: 20px;
+    z-index: 0;
+    background: url(../img/work\ together/decor-bg.png) no-repeat center center;
+    background-size: cover;
+  }
+
+  .orrder-form {
+    max-width: 704px;
+  }
+
+  /* modal */
+
+  .modal-content-work {
+    width: 492px;
+    height: 280px;
+    padding: 64px
+  }
+
+  .modal-work-text-p {
+    width: 350px;
+  }
+
+  .close-modal-work {
+    top: 20px;
+    right: 20px;
+  }
+
+
+}
+
+@media screen and (min-width: 1280px) {
+
+  .work-together-div {
+    width: 550px;
+    margin-bottom: 80px;
+  }
+
+  .description {
+    margin-bottom: 120px;
+  }
+
+  .contact-form-item {
+    display: block;
+  }
+
+  .contact-info .contact-form-list-link {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+  }
+
+  .flex1280 {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .content-contact {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-info {
+    margin-bottom: 0%;
+  }
+
+  .contact-form-list:not(:last-child) {
+    margin-bottom: 16px;
+  }
+
+  #work-together .decor-bg {
+    position: absolute;
+    width: 536px;
+    height: 416px;
+    top: 10px;
+    right: 10px;
+    z-index: 0;
+    background: url(../img/work\ together/decor-bg-4.png) no-repeat center center;
+    background-size: cover;
+  }
+
+  .orrder-form {
+    min-width: 596px;
+  }
 }
