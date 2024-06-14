@@ -63,8 +63,12 @@
 .header-nav {
   display: none;
   height: 100vh;
-  background: url(../img/header/points1.png), var(--White);
+  background: url(../img/header/dark-burger-them.png), var(--White);
   background-repeat: no-repeat;
+}
+
+.change-them {
+  background: url(../img/header/light-burger-them.png), var(--White);
 }
 
 .active-nav {
@@ -150,6 +154,12 @@
 .theme-btn:checked + .switch-theme::after {
   transition: all 750ms cubic-bezier(0.4, 0, 0.2, 1);
   transform: translateX(20px);
+}
+
+@media screen and (min-width: 600px) {
+  .nav-list {
+    margin-top: 60px;
+  }
 }
 
 @media screen and (min-width: 768px) {
