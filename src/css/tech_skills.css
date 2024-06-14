@@ -48,11 +48,17 @@
   align-items: center;
 }
 
+.marquee-img {
+  /* margin-left: 12px; */
+  margin: 0 12px;
+}
+
 .separator-container {
   margin: 0 24px;
   display: flex;
   align-items: center;
   justify-content: center;
+  display: none; /* test */
 }
 
 .separator {

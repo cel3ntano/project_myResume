@@ -64,6 +64,8 @@
   --Accent-secondary: #bcdfd1;
   --Accent-primary: #00b068;
 
+  --Button: rgba(41, 41, 41, 0.3);
+
   --accent-1: #00b068;
   --accent-2: #289990;
   --accent-3: #286099;
@@ -90,6 +92,8 @@
   --Accent-tertiary: #2a2d32;
   --Accent-secondary: #204136;
   --Accent-primary: #14c57c;
+
+  --Button: #2a2d32;
 
   --accent-1: #14c57c;
   --accent-2: #26bdb0;
