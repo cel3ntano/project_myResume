@@ -7,9 +7,9 @@
     <title>Ready! Steady! Go!</title>
     
     <script type="module" crossorigin src="/project_myResume/commonHelpers.js"></script>
-    <link rel="modulepreload" crossorigin href="/project_myResume/assets/vendor-3f8040e3.js">
+    <link rel="modulepreload" crossorigin href="/project_myResume/assets/vendor-3267af29.js">
     <link rel="stylesheet" href="/project_myResume/assets/vendor-06b6cc81.css">
-    <link rel="stylesheet" href="/project_myResume/assets/index-4128d43f.css">
+    <link rel="stylesheet" href="/project_myResume/assets/index-9ecd4433.css">
   </head>
   <body>
     <header class="header">
@@ -856,12 +856,64 @@
   </div>
 </section>
 
-      <section class="work-together section">
+      <section class="work-together section" id="work-together">
+
   <div class="container">
-    <p>Work together</p>
+    <div class="contact-form">
+      <div class="decor-bg"></div>
+      <h1 class="work-together-div">let's <span>work together</span></h1>
+      <div class="flex1280">
+        <div class="content-contact">
+          <p class="description">contact me to transform your ideas into exceptional solutions.</p>
+          <div class="contact-info">
+            <ul class="contact-form-item">
+              <li class="contact-form-list">
+                <a class="contact-form-list-link" href="tel:+380904567890">
+                  <svg class="contact-form-icon" width="24" height="24">
+                    <use href="/project_myResume/assets/icons-c3224ddb.svg#icon-phone"></use>
+                  </svg>+38 090 456 78 90</a>
+              </li>
+              <li class="contact-form-list">
+                <a class="contact-form-list-link" href="mailto:lloydjefferson@gmail.com"><svg class="contact-form-icon"
+                    width="24" height="24">
+                    <use href="/project_myResume/assets/icons-c3224ddb.svg#icon-email"></use>
+                  </svg>lloydjefferson@gmail.com</a>
+              </li>
+              <li class="contact-form-list">
+                <a class="contact-form-list-link" href="">
+                  <svg class="contact-form-icon" width="24" height="24">
+                    <use href="/project_myResume/assets/icons-c3224ddb.svg#icon-location"></use>
+                  </svg>SA, New York</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <form class="orrder-form orrder-form-js">
+          <div class="container-input-form">
+            <label class="email-user"></label>
+            <input type="email" name="email" pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$" required
+              class="order-input" id="email-user" placeholder="Your email*" />
+            <label class="comment"></label>
+            <textarea name="message" id="comment" rows="5" class="textarea" placeholder="Message"></textarea>
+          </div>
+
+          <button type="submit">SEND MESSAGE</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-work visually-hidden">
+    <div class="modal-content-work">
+      <button class="close-modal-work">
+        <svg class="modal-icon-work" width="24" height="24">
+          <use href="/project_myResume/assets/icons-c3224ddb.svg#icon-close-modal"></use>
+        </svg>
+      </button>
+      <div data-modal-root-js></div>
+    </div>
   </div>
 </section>
-
     </main>
     <footer class="footer section" id="contacts">
   <div class="container">
