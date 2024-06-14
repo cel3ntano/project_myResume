@@ -41,7 +41,6 @@ function renderReviews(reviews) {
       return `<div class="reviews__item swiper-slide">
       <p class="reviews__descr">${review.review}</p>
       <div class="reviews__person">
-    
       <img
         width="48"
         class="reviews__img"
