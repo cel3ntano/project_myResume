@@ -48,6 +48,10 @@
   align-items: center;
 }
 
+.marquee-img {
+  margin-left: 12px;
+}
+
 .separator-container {
   margin: 0 24px;
   display: flex;
