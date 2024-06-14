@@ -13,7 +13,7 @@
   padding: 0 20px 16px;
 }
 
-.hero-back.peach {
+.hero-back {
   position: relative;
   padding: 184px 0 16px 0;
   background-image: url(/img/hero/mob-peach.png);
@@ -23,22 +23,19 @@
 @media screen and (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-  .hero-back.peach {
+  .hero-back {
     background-image: url(/img/hero/mob-peach-2x.png);
   }
 }
 
-.hero-back.blue {
-  position: relative;
-  padding: 184px 0 16px 0;
+.hero-back.change-them {
   background-image: url(/img/hero/mob-blue.png);
-  background-size: 320px 704px;
 }
 
 @media screen and (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-  .hero-back.blue {
+  .hero-back.change-them {
     background-image: url(/img/hero/mob-blue-2x.png);
   }
 }
@@ -54,6 +51,7 @@
   line-height: 1.25;
   letter-spacing: 1.8px;
 }
+
 .hero-title-upper {
   color: var(--Black);
   position: absolute;
@@ -77,27 +75,34 @@
 .hero-social {
   display: none;
 }
-
 .hero-button {
-  padding: 32px 4px;
+  padding-left: 4px;
   position: relative;
+  border: 5px solid var(--Accent-hover-secondary);
+  /* border: 5px solid rgba(0, 176, 104, 0.2); */
+
+  border-radius: 16px;
+  width: 320px;
+  height: 92px;
+  transition: border-color 1s ease;
+}
+
+.hero-button:hover {
+  border-color: var(--Accent-hover-tertiary);
+  /* border-color: rgba(0, 176, 104, 0.6); */
 }
 
 .hero-button-spot {
   position: absolute;
-  top: 0;
-  right: 0;
-  width: 165px;
-  height: 92px;
+  top: -4px;
+  right: -3px;
+  width: 40px;
+  height: 90px;
   border-radius: 16px;
-  background-color: var(--Accent-primary);
-  opacity: 0.3;
-  transition: opacity 0.8s ease;
+  background-color: var(--Accent-hover-secondary);
+  /* background-color: rgba(0, 176, 104, 0.2); */
+  transition: background-color 1s ease, width 2s ease;
   z-index: 10;
-}
-
-.hero-button-spot:hover {
-  opacity: 0.6;
 }
 
 .hero-button-link {
@@ -109,16 +114,24 @@
   line-height: 1.55;
   letter-spacing: 0.5px;
   position: relative;
-  transition: transform 0.5s ease;
-  width: 226px;
+  transition: transform 1s ease;
+  height: 100%;
+  border-radius: 16px;
 }
 
 .hero-button-link:hover {
-  transform: translateX(12px);
+  transform: translateX(24px);
 }
 
 .hero-button-icon {
+  /* margin-left: 20px; */
   fill: var(--Accent-primary);
+}
+
+.hero-button:hover .hero-button-spot {
+  background-color: var(--Accent-hover-tertiary);
+  /* background-color: rgba(0, 176, 104, 0.6); */
+  width: 316px;
 }
 
 .hero-info {
@@ -152,7 +165,7 @@
     padding: 0 32px 44px;
   }
 
-  .hero-back.peach {
+  .hero-back {
     padding: 68px 0 32px 0;
     background-image: url(/img/hero/tab-peach.png);
     background-size: 704px 972px;
@@ -161,21 +174,19 @@
   @media screen and (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    .hero-back.peach {
+    .hero-back {
       background-image: url(/img/hero/tab-peach-2x.png);
     }
   }
 
-  .hero-back.blue {
-    padding: 68px 0 32px 0;
+  .hero-back.change-them {
     background-image: url(/img/hero/tab-blue.png);
-    background-size: 704px 972px;
   }
 
   @media screen and (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    .hero-back.blue {
+    .hero-back.change-them {
       background-image: url(/img/hero/tab-blue-2x.png);
     }
   }
@@ -225,7 +236,7 @@
   }
 
   .hero-button-spot {
-    width: 261px;
+    width: 48px;
     height: 96px;
   }
 
@@ -233,7 +244,17 @@
     letter-spacing: 0.5px;
     font-size: 20px;
     line-height: 1.6;
-    width: 246px;
+    /* width: 246px; */
+    transition: transform 1.2s ease;
+  }
+
+  .hero-button-link:hover {
+    transform: translateX(56px);
+  }
+  .hero-button:hover .hero-button-spot {
+    /* background-color: var(--Accent-primary); */
+    background-color: rgba(0, 176, 104, 0.6);
+    width: 414px;
   }
 
   .hero-info {
@@ -262,7 +283,7 @@
     padding: 0 32px 16px;
   }
 
-  .hero-back.peach {
+  .hero-back {
     padding: 0 0 100px 0;
     background-image: url(/img/hero/peach.png);
     background-size: 1216px 772px;
@@ -271,21 +292,19 @@
   @media screen and (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    .hero-back.peach {
+    .hero-back {
       background-image: url(/img/hero/peach-2x.png);
     }
   }
 
-  .hero-back.blue {
-    padding: 0 0 100px 0;
+  .hero-back.change-them {
     background-image: url(/img/hero/blue.png);
-    background-size: 1216px 772px;
   }
 
   @media screen and (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    .hero-back.blue {
+    .hero-back.change-them {
       background-image: url(/img/hero/blue-2x.png);
     }
   }
