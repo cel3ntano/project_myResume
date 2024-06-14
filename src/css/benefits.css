@@ -13,7 +13,7 @@
 }
 
 .benefits-span-title {
-  color: var(--Accent-green);
+  color: var(--Accent-primary);
 }
 
 .benefits-subtitle {
@@ -26,8 +26,6 @@
 }
 
 li > .benefits-text {
-  font-family: Poppins;
-  font-size: 16px;
   font-weight: 300;
   line-height: 1.5;
   letter-spacing: 0.03em;
@@ -51,7 +49,7 @@ li > .text-last {
 }
 
 .benefits-icon {
-  stroke: var(--Accent-green);
+  stroke: var(--Accent-primary);
   fill: transparent;
 }
 
@@ -63,6 +61,11 @@ li > .text-last {
     line-height: 1.14;
     letter-spacing: 0.01em;
     margin-bottom: 0px;
+  }
+
+  .benefits-subtitle {
+    font-size: 20px;
+    line-height: 1.6;
   }
 
   li > .benefits-text {
