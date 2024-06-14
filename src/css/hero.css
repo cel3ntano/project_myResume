@@ -92,7 +92,7 @@
   border-radius: 16px;
   background-color: var(--Accent-primary);
   opacity: 0.3;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.8s ease;
   z-index: 10;
 }
 
@@ -109,6 +109,12 @@
   line-height: 1.55;
   letter-spacing: 0.5px;
   position: relative;
+  transition: transform 0.5s ease;
+  width: 226px;
+}
+
+.hero-button-link:hover {
+  transform: translateX(12px);
 }
 
 .hero-button-icon {
@@ -227,6 +233,7 @@
     letter-spacing: 0.5px;
     font-size: 20px;
     line-height: 1.6;
+    width: 246px;
   }
 
   .hero-info {
