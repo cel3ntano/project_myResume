@@ -1,14 +1,6 @@
-.projects.section {
-  outline: 1px solid tomato;
-}
-
-.projects .container {
-  outline: 1px solid cyan;
-}
-
 .projects-title {
   text-align: center;
-  color: #292929;
+  color: var(--Black);
   font-family: Impact;
   font-size: 52px;
   line-height: 1.23;
@@ -18,7 +10,7 @@
 }
 
 .projects-title > span {
-  color: #00b068;
+  color: var(--Accent-primary);
 }
 
 .projects-item {
@@ -35,7 +27,7 @@
 
 .project-text {
   margin-top: 12px;
-  color: #292929;
+  color: var(--Black);
   font-family: Poppins;
   font-size: 16px;
   font-weight: 300;
@@ -48,7 +40,7 @@
 }
 
 .projects-subtitle {
-  color: #292929;
+  color: var(--Black);
   font-family: Poppins;
   font-size: 32px;
   font-weight: 500;
@@ -74,8 +66,8 @@
   gap: 12px;
   padding: 12px 24px;
   border-radius: 8px;
-  background-color: #e4e5e6;
-  color: #292929;
+  background-color: var(--Accent-tertiary);
+  color: var(--Black);
   font-family: Poppins;
   font-size: 16px;
   font-weight: 500;
@@ -86,13 +78,17 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.project-link:hover,
 .project-link:hover {
   background-color: #bbb;
 }
 
+/* /DARK//////
+.project-link:hover {
+  background-color: #3B3F45;
+} */
+
 .project-link > svg {
-  stroke: #00b068;
+  stroke: var(--Accent-primary);
   padding: 3px;
 }
 
@@ -101,8 +97,8 @@
   margin-top: 60px;
   display: block;
   border: none;
-  border-bottom: 1px solid #00b068;
-  color: #292929;
+  border-bottom: 1px solid var(--Accent-primary);
+  color: var(--Black);
   font-family: Poppins;
   font-size: 18px;
   line-height: 1.55;
@@ -114,9 +110,8 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.project-btn:hover,
 .project-btn:hover {
-  color: #00b068;
+  color: var(--Accent-primary);
 }
 
 .project-img {
