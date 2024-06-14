@@ -1,5 +1,54 @@
 <section class="hero section">
   <div class="container">
-    <p>Hero</p>
+    <div class="hero-upper">
+      <div class="hero-back peach blue">
+        <h1 class="hero-title"><span class="hero-title-upper">Hello, I am</span><span class="hero-title-lower">Fullstack
+            developer</span></h1>
+        <picture class="hero-image">
+          <source media="(min-width: 1280px)" srcset="./img/hero/dude.png 1x, ./img/hero/dude.png 2x">
+          <source media="(min-width: 768px)" srcset="./img/hero/dude-tab.png 1x, ./img/hero/dude-tab-2x.png 2x">
+          <source media="(max-width: 767px)" srcset="./img/hero/dude-mob.png 1x, ./img/hero/dude-mob-2x.png 2x">
+          <img src="./img/hero/dude.png" alt="Red Dude">
+        </picture>
+        <div class="hero-social">
+          <ul class="hero-social-list">
+            <li class="hero-social-item">
+              <a href="https://www.instagram.com/goitclub/" target="_blank" rel="noopener noreferrer">Insragram</a>
+            </li>
+
+            <li class="hero-social-item">
+              <a href="https://www.facebook.com/goITclub/" target="_blank" rel="noopener noreferrer">Facebook</a>
+            </li>
+
+            <li class="hero-social-item">
+              <a href="https://www.linkedin.com/school/goit-start-your-career-in-it " target="_blank"
+                rel="noopener noreferrer">Linkedin</a>
+            </li>
+
+            <li class="hero-social-item">
+              <a href="https://github.com/cel3ntano/project_myResume" target="_blank"
+                rel="noopener noreferrer">GitHub</a>
+            </li>
+          </ul>
+
+        </div>
+        <div class="hero-button">
+          <span class="hero-button-spot"></span>
+          <a class="hero-button-link" href="#work-together">
+            <svg class="hero-button-icon" width="28" height="18">
+              <use href="./img/icons.svg#icon-arrow-hero"></use>
+            </svg>
+            Order the project
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="hero-info">
+      <p class="hero-info-text">I work with people all over the world to create <span
+          class="hero-info-text-span">impressive</span> and <span class="hero-info-text-span">functional
+          websites</span> that
+        reflect each client’s unique
+        personality.</p>
+    </div>
   </div>
 </section>
