@@ -16,9 +16,9 @@
 .projects-item {
   margin-bottom: 48px;
 
-  &.is-hidden {
+  /* &.is-hidden {
     display: none;
-  }
+  } */
 }
 
 .projects-item:last-child {
@@ -152,7 +152,7 @@
   }
 
   .project-btn {
-    margin-top: 12px;
+    margin-top: 72px;
     font-size: 20px;
     line-height: 1.6;
     letter-spacing: 0.03em;
@@ -187,5 +187,8 @@
 
   .projects-subtitle-wrap {
     width: 763px;
+  }
+  .project-btn {
+    margin-top: 92px;
   }
 }
