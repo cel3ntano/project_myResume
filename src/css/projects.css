@@ -28,8 +28,6 @@
 .project-text {
   margin-top: 12px;
   color: var(--Black);
-  font-family: Poppins;
-  font-size: 16px;
   font-weight: 300;
   line-height: 1.5;
   letter-spacing: 0.03em;
@@ -68,8 +66,6 @@
   border-radius: 8px;
   background-color: var(--Accent-tertiary);
   color: var(--Black);
-  font-family: Poppins;
-  font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.03em;
@@ -79,13 +75,8 @@
 }
 
 .project-link:hover {
-  background-color: #bbb;
+  background-color: var(--Accent-hover-quaternary);
 }
-
-/* /DARK//////
-.project-link:hover {
-  background-color: #3B3F45;
-} */
 
 .project-link > svg {
   stroke: var(--Accent-primary);
@@ -93,8 +84,7 @@
 }
 
 .project-btn {
-  margin: 0 auto;
-  margin-top: 60px;
+  margin: 52px auto 0;
   display: block;
   border: none;
   border-bottom: 1px solid var(--Accent-primary);
