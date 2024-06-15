@@ -26,7 +26,7 @@
   padding: 32px;
   align-content: space-between;
   border-radius: 16px;
-  background: var(--Accent-tertiary);
+  background-color: var(--Accent-tertiary);
 }
 
 .reviews__person {
@@ -88,7 +88,7 @@
 
 .reviews__arrow-left:hover,
 .reviews__arrow-right:hover {
-  background: var(--Accent-tertiary);
+  background-color: var(--Accent-tertiary);
 }
 
 .disabled_btn {
@@ -96,10 +96,10 @@
   stroke: #cccccc;
 }
 
-.swiper-button-next,
+/* .swiper-button-next,
 .swiper-button-prev {
-  color: transparent;
-}
+  stroke: transparent;
+} */
 
 @media (min-width: 768px) {
   .reviews__h2 {
