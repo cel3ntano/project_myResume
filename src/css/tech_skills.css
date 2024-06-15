@@ -1,3 +1,11 @@
+.tech-skills.section {
+  padding: 0;
+}
+
+.tech-skills .container {
+  padding: 0;
+}
+
 .marquee-top {
   position: relative;
   z-index: 1;
