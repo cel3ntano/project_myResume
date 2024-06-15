@@ -65,7 +65,7 @@
   background-repeat: no-repeat;
 }
 
-.change-them {
+.header-nav.change-them {
   background: url(../img/header/light-burger-them.png), var(--White);
 }
 
