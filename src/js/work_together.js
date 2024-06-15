@@ -18,6 +18,7 @@ axios.defaults.baseURL = 'https://portfolio-js.b.goit.study/api';
 function openModal({ title, message }) {
   document.addEventListener('keydown', closeKeyboardClick);
   closeModalButton.addEventListener('click', closeModal);
+  modal.addEventListener('click', closeBackdropClick);
   modal.classList.remove('visually-hidden');
   document.body.classList.add('body-no-scroll');
 
@@ -28,12 +29,19 @@ function openModal({ title, message }) {
 function closeModal() {
   closeModalButton.removeEventListener('click', closeModal);
   document.removeEventListener('keydown', closeKeyboardClick);
+  modal.removeEventListener('click', closeBackdropClick);
   modal.classList.add('visually-hidden');
   document.body.classList.remove('body-no-scroll');
 }
 
 function closeKeyboardClick(e) {
-  if (e.key === `Escape`) closeModal();
+  if (e.key === 'Escape') closeModal();
+}
+
+function closeBackdropClick(e) {
+  if (e.target === modal) {
+    closeModal();
+  }
 }
 
 function formSubmit(e) {
