@@ -62,6 +62,7 @@
   --Accent-hover: #009156; /* buttons bg */
   --Accent-hover-secondary: rgba(0, 176, 103, 0.3); /* hero */
   --Accent-hover-tertiary: rgba(0, 176, 103, 0.6); /* hero */
+  --Accent-hover-quaternary: #bbb; /* projects */
 
   --Accent-quaternary: rgba(0, 176, 104, 0.1); /* benefits icons bg */
   --Accent-tertiary: #e4e5e6;
@@ -97,6 +98,7 @@
   --Accent-hover: #009156; /* buttons bg */
   --Accent-hover-secondary: rgba(20, 197, 124, 0.3); /* hero */
   --Accent-hover-tertiary: rgba(20, 197, 124, 0.6); /* hero */
+  --Accent-hover-quaternary: #3b3f45; /* projects */
 
   --Accent-quaternary: rgba(20, 197, 124, 0.1); /* benefits icons bg */
   --Accent-tertiary: #2a2d32;
