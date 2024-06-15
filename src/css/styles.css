@@ -73,6 +73,11 @@
   --Button-disabled: rgba(41, 41, 41, 0.1); /* reviews */
   --Arrow-disabled: #cccccc; /* reviews */
 
+  /* header */
+  --Arrow-fill: #3b05ff;
+  --Arrow-border: #0863ffe1;
+  --Arrow-shadow: #0069d2c7;
+
   --accent-1: #00b068;
   --accent-2: #289990;
   --accent-3: #286099;
@@ -105,6 +110,11 @@
   --Accent-secondary: #204136;
   --Accent-primary: #14c57c;
 
+  /* header */
+  --Arrow-fill: #ff464c;
+  --Arrow-border: #ff677e;
+  --Arrow-shadow: #ff405ddb;
+
   --Button: #2a2d32;
   --Button-disabled: #2a2d32; /* reviews */
   --Arrow-disabled: #383a3d; /* reviews */
@@ -136,10 +146,15 @@
 .section {
   padding: 80px 0;
 }
+
 .container {
   max-width: 360px;
   padding: 0 20px;
   margin: 0 auto;
+}
+
+.toggle-scroll {
+  overflow: hidden;
 }
 
 @media screen and (min-width: 768px) {
