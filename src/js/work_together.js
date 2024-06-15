@@ -117,7 +117,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const commentError = document.getElementById('comment-error');
   const validIcon = document.querySelector('.valid-icon');
 
-  emailInput.addEventListener('input', function () {
+  emailInput.addEventListener('blur', function () {
     if (emailInput.validity.valid) {
       emailInput.classList.remove('invalid');
       emailInput.classList.add('valid');
