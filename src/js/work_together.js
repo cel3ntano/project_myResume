@@ -131,7 +131,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
-  commentTextarea.addEventListener('input', function () {
+  commentTextarea.addEventListener('blur', function () {
     if (commentTextarea.value.trim() !== '') {
       commentTextarea.classList.remove('invalid');
       commentTextarea.classList.add('valid');
