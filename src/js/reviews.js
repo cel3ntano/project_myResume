@@ -38,18 +38,20 @@ function renderReviews(reviews) {
 
   const markup = reviews
     .map(review => {
-      return `<div class="reviews__item swiper-slide">
-      <p class="reviews__descr">${review.review}</p>
-      <div class="reviews__person">
-      <img
-        width="48"
-        class="reviews__img"
-        src="${review.avatar_url}"
-        alt="${review.author}"
-      />
-      <h3 class="reviews__h3">${review.author}</h3>
+      return `<li class="reviews__item swiper-slide">
+      <div class= reviews__card__container>
+       <p class="reviews__descr">${review.review}</p>
+       <div class="reviews__person">
+        <img
+          width="48"
+          class="reviews__img"
+          src="${review.avatar_url}"
+          alt="${review.author}"
+         />
+       <h3 class="reviews__h3">${review.author}</h3>
+       </div>
       </div>
-    </div>`;
+    </li>`;
     })
     .join('');
   reviewsList.insertAdjacentHTML('beforeend', markup);
