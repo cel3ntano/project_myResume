@@ -336,7 +336,7 @@ button[type="submit"]:hover {
     top: -104px;
     right: 0px;
     z-index: 0;
-    background: url(../img/work\ together/decor-bg.png) no-repeat center center;
+    background: url(/img/work\ together/decor-bg.png) no-repeat center center;
     background-size: cover;
   }
 
@@ -412,7 +412,7 @@ button[type="submit"]:hover {
     top: -144px;
     right: 0px;
     z-index: 0;
-    background: url(../img/work\ together/decor-bg-4.png) no-repeat center center;
+    background: url(/img/work\ together/decor-bg-4.png) no-repeat center center;
     background-size: cover;
 
   }
