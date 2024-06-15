@@ -33,21 +33,29 @@
         <form class="orrder-form orrder-form-js">
           <div class="container-input-form">
             <label class="email-user"></label>
-            <input type="email" name="email" pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$" required
-              class="order-input" id="email-user" placeholder="Your email*" />
+            <div class="email-input-wrapper">
+              <input type="email" name="email" pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$" required
+                class="order-input" id="email-user" placeholder="Your email*" />
+              <svg class="valid-icon" width="16" height="16">
+                <use href="./img/icons.svg#icon-input_success"></use>
+              </svg>
+            </div>
+            <p class="error-message" id="email-error">Invalid email, try again</p>
             <label class="comment"></label>
             <textarea name="message" id="comment" rows="5" class="textarea" placeholder="Message"></textarea>
+            <p class="error-message" id="comment-error">Message cannot be empty</p>
           </div>
 
           <button type="submit">SEND MESSAGE</button>
         </form>
+
       </div>
     </div>
   </div>
 
-  <div class="modal-work visually-hidden">
+  <div class="modal-work modal-work-js visually-hidden">
     <div class="modal-content-work">
-      <button class="close-modal-work">
+      <button class="close-modal-work close-modal-work-js">
         <svg class="modal-icon-work" width="24" height="24">
           <use href="./img/icons.svg#icon-close-modal"></use>
         </svg>
@@ -55,4 +63,6 @@
       <div data-modal-root-js></div>
     </div>
   </div>
+
+
 </section>
