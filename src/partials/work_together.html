@@ -30,7 +30,7 @@
             </ul>
           </div>
         </div>
-        <form class="orrder-form orrder-form-js needs-validation">
+        <form class="orrder-form orrder-form-js">
           <div class="container-input-form">
             <label class="email-user"></label>
             <div class="email-input-wrapper">
@@ -40,12 +40,15 @@
                 <use href="./img/icons.svg#icon-input_success"></use>
               </svg>
             </div>
+            <p class="error-message" id="email-error">Invalid email, try again</p>
             <label class="comment"></label>
             <textarea name="message" id="comment" rows="5" class="textarea" placeholder="Message"></textarea>
+            <p class="error-message" id="comment-error">Message cannot be empty</p>
           </div>
 
           <button type="submit">SEND MESSAGE</button>
         </form>
+
       </div>
     </div>
   </div>
