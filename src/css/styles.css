@@ -134,7 +134,7 @@
 }
 
 .section {
-  padding: 80px 0;
+  padding-top: 80px;
 }
 .container {
   max-width: 360px;
@@ -144,7 +144,7 @@
 
 @media screen and (min-width: 768px) {
   .section {
-    padding: 124px 0;
+    padding-top: 124px;
   }
 
   .container {
@@ -155,7 +155,7 @@
 
 @media screen and (min-width: 1280px) {
   .section {
-    padding: 164px 0;
+    padding-top: 164px;
   }
 
   .container {
