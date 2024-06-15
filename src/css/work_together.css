@@ -1,13 +1,10 @@
 .work-together.section {
   outline: 1px solid tomato;
-
 }
-
 
 .work-together .container {
   outline: 1px solid cyan;
 }
-
 
 .work-together-div {
   color: var(--Black, #292929);
@@ -22,7 +19,7 @@
 }
 
 .work-together span {
-  color: var(--Accent-primary)
+  color: var(--Accent-primary);
 }
 
 .description {
@@ -36,8 +33,6 @@
   text-transform: uppercase;
   margin-bottom: 32px;
 }
-
-
 
 .contact-info {
   text-align: left;
@@ -64,7 +59,6 @@
   font-weight: 300;
   line-height: 1.5;
   letter-spacing: 0.03em;
-
 }
 
 .contact-info .contact-form-list-link {
@@ -78,11 +72,10 @@
   align-items: center;
 }
 
-
 .contact-form-icon {
   margin-right: 16px;
   fill: none;
-  stroke: var(--Accent-primary)
+  stroke: var(--Accent-primary);
 }
 
 .order-form {
@@ -146,13 +139,13 @@ textarea {
   resize: vertical;
 }
 
-button[type="submit"] {
+button[type='submit'] {
   width: 100%;
   padding: 12px 24px;
   border: none;
   border-radius: 8px;
   background-color: var(--Accent-primary);
-  color: #F0F0F0;
+  color: #f0f0f0;
   text-align: center;
   font-family: Poppins;
   font-size: 16px;
@@ -164,7 +157,7 @@ button[type="submit"] {
   transition: background-color 0.3s;
 }
 
-button[type="submit"]:hover {
+button[type='submit']:hover {
   background-color: var(--Accent-hover);
 }
 
@@ -198,7 +191,7 @@ button[type="submit"]:hover {
   border-color: green;
 }
 
-.order-input.valid~.valid-icon {
+.order-input.valid ~ .valid-icon {
   display: block;
 }
 
@@ -220,7 +213,6 @@ button[type="submit"]:hover {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-
 }
 
 .modal-content-work {
@@ -235,7 +227,6 @@ button[type="submit"]:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 16px;
   position: relative;
-
 }
 
 .modal-work-text {
@@ -279,9 +270,6 @@ button[type="submit"]:hover {
   overflow: hidden;
 }
 
-
-
-
 @media screen and (min-width: 768px) {
   .work-together-div {
     font-size: 108px;
@@ -315,7 +303,7 @@ button[type="submit"]:hover {
     margin-bottom: 32px;
   }
 
-  button[type="submit"] {
+  button[type='submit'] {
     width: 173px;
   }
 
@@ -324,7 +312,6 @@ button[type="submit"]:hover {
     width: 100%;
     height: 1015px;
     background-color: var(--White #f0f0f0);
-
   }
 
   #work-together .decor-bg {
@@ -336,7 +323,7 @@ button[type="submit"]:hover {
     top: -104px;
     right: 0px;
     z-index: 0;
-    background: url(/img/work\ together/decor-bg.png) no-repeat center center;
+    background: url(/img/work_together/decor-bg.png) no-repeat center center;
     background-size: cover;
   }
 
@@ -349,7 +336,7 @@ button[type="submit"]:hover {
   .modal-content-work {
     width: 492px;
     height: 280px;
-    padding: 64px
+    padding: 64px;
   }
 
   .modal-work-text-p {
@@ -360,12 +347,9 @@ button[type="submit"]:hover {
     top: 20px;
     right: 20px;
   }
-
-
 }
 
 @media screen and (min-width: 1280px) {
-
   .work-together-div {
     width: 550px;
     margin-bottom: 80px;
@@ -412,9 +396,8 @@ button[type="submit"]:hover {
     top: -144px;
     right: 0px;
     z-index: 0;
-    background: url(/img/work\ together/decor-bg-4.png) no-repeat center center;
+    background: url(/img/work_together/decor-bg-4.png) no-repeat center center;
     background-size: cover;
-
   }
 
   .orrder-form {
