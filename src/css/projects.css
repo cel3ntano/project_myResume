@@ -15,10 +15,6 @@
 
 .projects-item {
   margin-bottom: 48px;
-
-  /* &.is-hidden {
-    display: none;
-  } */
 }
 
 .projects-item:last-child {
