@@ -4,10 +4,17 @@ const navList = document.querySelector('.nav-list');
 const nav = document.querySelector('.header-nav');
 const body = document.body;
 const upLink = document.querySelector('.up-link');
+const headerContainer = document.querySelector('.header > .container');
+
+const toggleHeaderBc = () => {
+  if (headerContainer.getAttribute('class') != 'container') {
+    headerContainer.classList.toggle('header-background');
+  }
+};
 
 const toggleImage = e => {
   e.preventDefault();
-
+  toggleHeaderBc()
   upLink.classList.toggle('up-link-active');
   body.classList.toggle('toggle-scroll');
   burgerClose.classList.toggle('active-btn');
@@ -24,6 +31,19 @@ const goToSection = e => {
   }
 };
 
+const changeBc = () => {
+  const scrollPosition = window.scrollY || window.pageYOffset;
+  if (scrollPosition > 350) {
+    headerContainer.classList.remove('header-background');
+    upLink.style.display = 'flex';
+  } else {
+    headerContainer.classList.add('header-background');
+    upLink.style.display = 'none';
+  }
+};
+
 burgerOpen.addEventListener('click', toggleImage);
 burgerClose.addEventListener('click', toggleImage);
 navList.addEventListener('click', goToSection);
+
+document.addEventListener('scroll', changeBc);
