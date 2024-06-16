@@ -152,10 +152,17 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
-  emailInput.addEventListener('keydown', function (e) {
-    if (e.key === 'Enter') {
-      e.preventDefault();
-      commentTextarea.focus();
+  emailInput.addEventListener('keydown', function (event) {
+    if (event.key === 'Enter') {
+      event.preventDefault();
+      if (emailInput.validity.valid) {
+        commentTextarea.focus();
+      } else {
+        emailInput.focus();
+        emailInput.classList.add('invalid');
+        emailError.style.display = 'block';
+        validIcon.style.display = 'none';
+      }
     }
   });
 });
