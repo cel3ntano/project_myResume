@@ -1,17 +1,15 @@
 .header {
+}
+
+.header > .container {
   z-index: 999;
   text-align: center;
   position: fixed;
-  padding: 0 20px;
-  max-width: 360px;
+  /* max-width: 360px; */
   width: 100%;
   left: 50%;
   transform: translate(-50%);
   background-color: var(--White);
-}
-
-.header > .container {
-  padding: 0;
 }
 
 .header-mobile-container {
@@ -67,7 +65,7 @@
   background-repeat: no-repeat;
 }
 
-.change-them {
+.header-nav.change-them {
   background: url(../img/header/light-burger-them.png), var(--White);
 }
 
@@ -92,12 +90,6 @@
 .nav-link {
   font-weight: 300;
   line-height: 1.5rem;
-}
-
-.therme-mobile {
-  position: absolute;
-  top: 60px;
-  right: 17px;
 }
 
 .theme {
@@ -156,6 +148,39 @@
   transform: translateX(20px);
 }
 
+.section-up-link {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-left: 20px;
+  padding-right: 26px;
+  max-width: 360px;
+  width: 100%;
+  bottom: 65px;
+  z-index: 9999;
+  display: flex;
+  justify-content: right;
+}
+
+.icon-up-arrow {
+  fill: var(--Arrow-fill);
+}
+
+.up-link {
+  text-align: center;
+  display: none;
+  width: 44px;
+  height: 44px;
+  border-radius: 10%;
+  backdrop-filter: blur(5px);
+  border: 3px solid var(--Arrow-border);
+  box-shadow: 4px 4px 2.5px var(--Arrow-shadow);
+}
+
+.up-link-active {
+  display: block;
+}
+
 @media screen and (min-width: 600px) {
   .nav-list {
     margin-top: 60px;
@@ -180,7 +205,7 @@
 
   .header-mobile-container {
     padding: 0;
-    display: block;
+    display: flex;
   }
 
   .switch-open-burger {
@@ -221,15 +246,30 @@
     transform: translateY(2px);
   }
 
-  .therme-mobile {
-    position: unset;
-    display: flex;
-    align-items: center;
+  .theme {
+    margin-left: 30px;
+  }
+
+  .section-up-link {
+    max-width: 768px;
+    padding-left: 32px;
+    padding-right: 38px;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .header {
+  .header,
+  .section-up-link {
     max-width: 1280px;
+  }
+}
+
+@media screen and (min-resolution: 144dpi) {
+  .header-nav {
+    background: url(../img/header/dark-burger-them-x2.png), var(--White);
+  }
+
+  .change-them {
+    background: url(../img/header/light-burger-them-x2.png), var(--White);
   }
 }

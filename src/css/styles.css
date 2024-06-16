@@ -51,7 +51,7 @@
 }
 
 :root {
-  font-family: Poppins, Impact, Montserrat, Arial, sans-serif;
+  font-family: Poppins, Montserrat, Impact, Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -62,6 +62,7 @@
   --Accent-hover: #009156; /* buttons bg */
   --Accent-hover-secondary: rgba(0, 176, 103, 0.3); /* hero */
   --Accent-hover-tertiary: rgba(0, 176, 103, 0.6); /* hero */
+  --Accent-hover-quaternary: #bbb; /* projects */
 
   --Accent-quaternary: rgba(0, 176, 104, 0.1); /* benefits icons bg */
   --Accent-tertiary: #e4e5e6;
@@ -71,6 +72,11 @@
   --Button: rgba(41, 41, 41, 0.3);
   --Button-disabled: rgba(41, 41, 41, 0.1); /* reviews */
   --Arrow-disabled: #cccccc; /* reviews */
+
+  /* header */
+  --Arrow-fill: #3b05ff;
+  --Arrow-border: #0863ffe1;
+  --Arrow-shadow: #0069d2c7;
 
   --accent-1: #00b068;
   --accent-2: #289990;
@@ -97,11 +103,17 @@
   --Accent-hover: #009156; /* buttons bg */
   --Accent-hover-secondary: rgba(20, 197, 124, 0.3); /* hero */
   --Accent-hover-tertiary: rgba(20, 197, 124, 0.6); /* hero */
+  --Accent-hover-quaternary: #3b3f45; /* projects */
 
   --Accent-quaternary: rgba(20, 197, 124, 0.1); /* benefits icons bg */
   --Accent-tertiary: #2a2d32;
   --Accent-secondary: #204136;
   --Accent-primary: #14c57c;
+
+  /* header */
+  --Arrow-fill: #ff464c;
+  --Arrow-border: #ff677e;
+  --Arrow-shadow: #ff405ddb;
 
   --Button: #2a2d32;
   --Button-disabled: #2a2d32; /* reviews */
@@ -132,17 +144,22 @@
 }
 
 .section {
-  padding: 80px 0;
+  padding-top: 80px;
 }
+
 .container {
   max-width: 360px;
   padding: 0 20px;
   margin: 0 auto;
 }
 
+.toggle-scroll {
+  overflow: hidden;
+}
+
 @media screen and (min-width: 768px) {
   .section {
-    padding: 124px 0;
+    padding-top: 124px;
   }
 
   .container {
@@ -153,7 +170,7 @@
 
 @media screen and (min-width: 1280px) {
   .section {
-    padding: 164px 0;
+    padding-top: 164px;
   }
 
   .container {

@@ -1,21 +1,10 @@
-.reviews.section {
-  outline: 1px solid tomato;
-}
-
-.reviews .container {
-  outline: 1px solid cyan;
-  width: 100%;
-  height: 100%;
-}
-
 .reviews__h2 {
   color: var(--Black);
   font-family: Impact;
   font-size: 52px;
-  font-style: normal;
   font-weight: 400;
-  line-height: 64px;
-  letter-spacing: 1.8px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 40px;
@@ -24,16 +13,22 @@
 .reviews__item {
   height: auto !important;
   padding: 32px;
-  align-content: space-between;
   border-radius: 16px;
-  background: var(--Accent-tertiary);
+  background-color: var(--Accent-tertiary);
+}
+
+.reviews__card__container {
+  display: flex;
+  flex-direction: column;
+  /* align-items: flex-end; */
+  justify-content: space-between;
+  height: 100%;
 }
 
 .reviews__person {
   display: flex;
   align-items: center;
   gap: 16px;
-  margin-top: 24px;
 }
 
 .reviews__img {
@@ -44,22 +39,16 @@
 
 .reviews__h3 {
   color: var(--Black);
-  font-family: Poppins;
-  font-size: 16px;
-  font-style: normal;
   font-weight: 600;
-  line-height: 24px;
-  letter-spacing: 0.5px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
 }
 
 .reviews__descr {
   color: var(--Black);
-  font-family: Poppins;
-  font-size: 16px;
-  font-style: normal;
   font-weight: 300;
-  line-height: 24px;
-  letter-spacing: 0.5px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
 }
 
 .reviews__arrow {
@@ -80,7 +69,6 @@
   align-items: center;
   gap: 10px;
   border-radius: 8px;
-  /* border: 1px solid rgba(41, 41, 41, 0.1); */
   border: 1px solid var(--Button);
   stroke: var(--Black);
   fill: transparent;
@@ -88,17 +76,17 @@
 
 .reviews__arrow-left:hover,
 .reviews__arrow-right:hover {
-  background: var(--Accent-tertiary);
+  background-color: var(--Accent-tertiary);
 }
 
 .disabled_btn {
-  border: 1px solid rgba(41, 41, 41, 0.1);
-  stroke: #cccccc;
+  border: 1px solid var(--Button-disabled);
+  stroke: var(--Arrow-disabled);
 }
 
 .swiper-button-next,
 .swiper-button-prev {
-  color: transparent;
+  background-color: transparent;
 }
 
 @media (min-width: 768px) {
