@@ -3,7 +3,7 @@ const burgerClose = document.querySelector('.switch-close-burger');
 const navList = document.querySelector('.nav-list');
 const nav = document.querySelector('.header-nav');
 const body = document.body;
-const upLink = document.querySelector('.up-link');
+const upLink = document.querySelector('.section-up-link');
 const headerContainer = document.querySelector('.header > .container');
 
 const toggleHeaderBc = () => {
