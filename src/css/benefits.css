@@ -32,13 +32,6 @@ li .benefits-text {
   margin-bottom: 32px;
 }
 
-/* .flex-wraper > .benefits-text {
-  font-weight: 300;
-  line-height: 1.5;
-  letter-spacing: 0.03em;
-  margin-bottom: 32px;
-} */
-
 li .text-last {
   margin-bottom: 0px;
 }
@@ -51,7 +44,7 @@ li .text-last {
   justify-content: center;
   align-items: center;
   border-radius: 8px;
-  background: rgba(0, 176, 104, 0.1);
+  background: var(--Accent-quaternary);
   margin-bottom: 16px;
 }
 
@@ -112,18 +105,42 @@ li .text-last {
 /* ================================ */
 @media screen and (min-width: 1280px) {
   .benefits-title {
-    max-width: 682px;
+    width: 681px;
   }
 
   .benefits-decor-img {
-    height: auto;
-    filter: blur(3.70084285736084px);
     display: block;
     position: absolute;
-    top: -123px;
+    top: -148px;
     right: 32px;
-    margin-bottom: 16px;
   }
+
+  .benefits-decor-img {
+    background-image: url(../img/benefits/benefits-peach.png);
+    width: 532px;
+    height: 412px;
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .benefits-decor-img {
+      background-image: url(../img/benefits/benefits-peach-2x.png);
+    }
+  }
+
+  .benefits-decor-img.change-them {
+    background-image: url(../img/benefits/benefits-blue.png);
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .benefits-decor-img.change-them {
+      background-image: url(../img/benefits/benefits-blue-2x.png);
+    }
+  }
+
   .benefits-list {
     margin-top: -96px;
   }
