@@ -29,7 +29,7 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 1.55;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.025em;
   text-transform: uppercase;
   margin-bottom: 32px;
 }
@@ -47,9 +47,15 @@
   margin: 0;
 }
 
+/* 
 .contact-form {
   position: relative;
+} */
+
+.work-together .container {
+  position: relative;
 }
+
 
 .contact-form-list {
   color: var(--Black, #292929);
@@ -59,6 +65,7 @@
   font-weight: 300;
   line-height: 1.5;
   letter-spacing: 0.03em;
+  display: flex;
 }
 
 .contact-info .contact-form-list-link {
@@ -94,6 +101,7 @@
   display: flex;
   flex-wrap: wrap;
   row-gap: 32px;
+
 }
 
 .order-input {
@@ -119,7 +127,6 @@
   border: 1px solid transparent;
   border-radius: 8px;
   background: var(--Accent-tertiary);
-  box-sizing: border-box;
 }
 
 .textarea::placeholder {
@@ -151,7 +158,7 @@ button[type='submit'] {
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
-  line-height: 1.5;
+  line-height: 1.3;
   letter-spacing: 0.03em;
   cursor: pointer;
   transition: background-color 0.3s;
@@ -183,7 +190,7 @@ button[type='submit']:hover {
 .order-input.invalid,
 .textarea.invalid {
   border-color: red;
-  color: red;
+  color: var(--Black #292929);
 }
 
 .order-input.valid,
@@ -191,15 +198,29 @@ button[type='submit']:hover {
   border-color: green;
 }
 
-.order-input.valid ~ .valid-icon {
+.order-input.valid~.valid-icon {
   display: block;
+}
+
+.error-message-wrapper {
+  position: relative;
+  width: 100%;
 }
 
 .error-message {
   color: red;
   font-size: 12px;
   display: none;
+  position: absolute;
+  top: 95%;
+  margin-top: 3px;
 }
+
+/* .error-message:not(:last-child) {
+  margin-top: 3px;
+} */
+
+
 
 /* modal */
 
@@ -310,7 +331,7 @@ button[type='submit']:hover {
   .work-together {
     position: relative;
     width: 100%;
-    height: 1015px;
+    height: 0%;
     background-color: var(--White #f0f0f0);
   }
 
@@ -321,14 +342,33 @@ button[type='submit']:hover {
     /* top: 15px;
     right: 20px; */
     top: -104px;
-    right: 0px;
+    right: 21px;
     z-index: 0;
-    background: url(/img/work_together/decor-bg.png) no-repeat center center;
+    background-image: url(/img/work_together/work-peach-tab.png);
     background-size: cover;
   }
 
-  .orrder-form {
-    max-width: 704px;
+
+
+  @media screen and (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    #work-together .decor-bg {
+      background-image: url(/img/work_together/work-peach-tab-2x.png);
+    }
+  }
+
+  #work-together .decor-bg.change-them {
+    background-color: transparent;
+    background-image: url(/img/work_together/work-blue-tab.png);
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    #work-together .decor-bg.change-them {
+      background-image: url(/img/work_together/work-blue-tab-2x.png);
+    }
   }
 
   /* modal */
@@ -367,6 +407,7 @@ button[type='submit']:hover {
     display: flex;
     justify-content: left;
     align-items: center;
+
   }
 
   .flex1280 {
@@ -383,8 +424,16 @@ button[type='submit']:hover {
     margin-bottom: 0%;
   }
 
+  .contact-form-list {
+    display: flex;
+  }
+
   .contact-form-list:not(:last-child) {
     margin-bottom: 16px;
+  }
+
+  .orrder-form {
+    min-width: 596px;
   }
 
   #work-together .decor-bg {
@@ -396,11 +445,30 @@ button[type='submit']:hover {
     top: -144px;
     right: 0px;
     z-index: 0;
-    background: url(/img/work_together/decor-bg-4.png) no-repeat center center;
+    background-image: url(/img/work_together/work-peach-main.png);
     background-size: cover;
   }
 
-  .orrder-form {
-    min-width: 596px;
+
+
+  @media screen and (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    #work-together .decor-bg {
+      background-image: url(/img/work_together/work-peach-main-2x.png);
+    }
+  }
+
+  #work-together .decor-bg.change-them {
+    background-color: transparent;
+    background-image: url(/img/work_together/work-blue-main.png);
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    #work-together .decor-bg.change-them {
+      background-image: url(/img/work_together/work-blue-main-2x.png);
+    }
   }
 }

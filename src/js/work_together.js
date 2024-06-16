@@ -44,17 +44,17 @@ function closeBackdropClick(e) {
   }
 }
 
-function formSubmit(e) {
-  e.preventDefault();
-  const { email, message } = e.target.elements;
+// function formSubmit(e) {
+//   e.preventDefault();
+//   const { email, message } = e.target.elements;
 
-  const submit = {
-    email: email.value,
-    comment: message.value,
-  };
+//   const submit = {
+//     email: email.value,
+//     comment: message.value,
+//   };
 
-  fechPost(submit);
-}
+//   fechPost(submit);
+// }
 
 async function fechPost(submit) {
   try {
@@ -68,7 +68,7 @@ async function fechPost(submit) {
   }
 }
 
-form.addEventListener('submit', formSubmit);
+// form.addEventListener('submit', formSubmit);
 form.addEventListener('input', handleInput);
 form.addEventListener('submit', handleSubmit);
 
@@ -101,6 +101,15 @@ function handleInput(event) {
 
 function handleSubmit(event) {
   event.preventDefault();
+
+  const { email, message } = event.target.elements;
+
+  const submit = {
+    email: email.value,
+    comment: message.value,
+  };
+
+  fechPost(submit);
   formData = {
     email: '',
     message: '',
@@ -140,6 +149,13 @@ document.addEventListener('DOMContentLoaded', function () {
       commentTextarea.classList.remove('valid');
       commentTextarea.classList.add('invalid');
       commentError.style.display = 'block';
+    }
+  });
+
+  emailInput.addEventListener('keydown', function (e) {
+    if (e.key === 'Enter') {
+      e.preventDefault();
+      commentTextarea.focus();
     }
   });
 });
