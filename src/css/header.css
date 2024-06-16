@@ -181,6 +181,21 @@
   display: block;
 }
 
+@media screen and (min-device-pixel-ratio: 2),
+  (min-resolution: 144dpi),
+  (min-resolution: 2dppx) {
+  .header-nav {
+    background: url(../img/header/dark-burger-them-x2.png), var(--White);
+    background-size: 332px 704px;
+    background-repeat: no-repeat;
+  }
+
+  .header-nav.change-them {
+    background: url(../img/header/light-burger-them-x2.png), var(--White);
+    background-size: 332px 704px;
+  }
+}
+
 @media screen and (min-width: 600px) {
   .nav-list {
     margin-top: 60px;
@@ -188,12 +203,9 @@
 }
 
 @media screen and (min-width: 768px) {
-  .header {
+  .header > .container {
     max-width: 768px;
     padding: 36px 32px;
-  }
-
-  .header > .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -219,6 +231,10 @@
   .header-nav {
     display: block;
     height: auto;
+    background: none;
+  }
+
+  .header-nav.change-them {
     background: none;
   }
 
@@ -258,18 +274,8 @@
 }
 
 @media screen and (min-width: 1280px) {
-  .header,
+  .header > .container,
   .section-up-link {
     max-width: 1280px;
-  }
-}
-
-@media screen and (min-resolution: 144dpi) {
-  .header-nav {
-    background: url(../img/header/dark-burger-them-x2.png), var(--White);
-  }
-
-  .change-them {
-    background: url(../img/header/light-burger-them-x2.png), var(--White);
   }
 }
