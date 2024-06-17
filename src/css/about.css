@@ -1,7 +1,241 @@
-.about.section {
-  outline: 1px solid tomato;
+.about-title {
+  font-family: 'Impact';
+  font-size: 52px;
+  line-height: 1.23;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-right: auto;
+  color: var(--Black);
+  margin-bottom: 40px;
 }
 
-.about .container {
-  outline: 1px solid cyan;
+.about-title-span {
+  color: var(--Accent-primary);
+}
+
+.about-img {
+  margin-bottom: 40px;
+}
+
+.benef-peach {
+  border-radius: 16px;
+}
+
+.benef-blue {
+  border-radius: 16px;
+}
+
+.bio-text {
+  margin-bottom: 40px;
+}
+
+.about-subtitle {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--Black);
+  margin-bottom: 32px;
+}
+
+.bio-text-item {
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  color: var(--Black);
+}
+
+.bio-text-item:not(:first-child) {
+  margin-bottom: 24px;
+}
+
+.education-text {
+  margin-bottom: 40px;
+}
+
+.education-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-left: 32px;
+}
+
+.education-list-item {
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  color: var(--Black);
+  position: relative;
+}
+.education-list-item::before,
+.role-list-item::before {
+  display: inline-block;
+  position: absolute;
+  content: '';
+  top: 10px;
+  left: -18px;
+  background-color: var(--Accent-primary);
+  border-radius: 1px;
+  width: 4px;
+  height: 4px;
+}
+
+.role-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-left: 24px;
+}
+
+.role-list-item {
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  color: var(--Black);
+  position: relative;
+}
+
+.benef-peach {
+  display: block;
+}
+
+.benef-blue {
+  display: none;
+}
+
+.benef-peach.change-them {
+  display: none;
+}
+
+.benef-blue.change-them {
+  display: block;
+}
+
+/* ===================== */
+
+@media screen and (min-width: 768px) {
+  .about-title {
+    font-size: 108px;
+    line-height: 1.15;
+    letter-spacing: 0.02em;
+  }
+
+  .about-content {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+  }
+
+  .about-img {
+    margin-top: 408px;
+    margin-right: 32px;
+  }
+
+  .bio-text {
+    display: block;
+    width: 336px;
+    margin-bottom: 140px;
+  }
+
+  .about-subtitle {
+    font-size: 36px;
+    line-height: 1.33;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+  }
+
+  .education-text {
+    display: block;
+    width: 336px;
+    margin-right: 32px;
+  }
+
+  .education-list {
+    gap: 16px;
+  }
+
+  .role-text {
+    display: block;
+    width: 336px;
+  }
+
+  .role-list {
+    gap: 16px;
+  }
+
+  .about-img-decor {
+    background-image: url(/img/about/decor-peach-1x-tab-min.png);
+    background-repeat: no-repeat;
+    background-size: 336px 252px;
+    background-position: 362px 690px;
+  }
+
+  .about-img-decor.change-them {
+    background-image: url(/img/about/decor-blue-1x-tab-min.png);
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .about-img-decor {
+      background-image: url(/img/about/decor-peach-2x-tab-min.png);
+      background-size: 336px 252px;
+      background-repeat: no-repeat;
+      background-position: 362px 690px;
+    }
+    .about-img-decor.change-them {
+      background-image: url(/img/about/decor-blue-2x-tab-min.png);
+    }
+  }
+}
+
+/* ===================== */
+
+@media screen and (min-width: 1280px) {
+  .about-img {
+    margin-top: 312px;
+    margin-right: 136px;
+  }
+
+  .bio-text {
+    width: 488px;
+    height: 488px;
+  }
+
+  .about-img-decor {
+    background-image: url(/img/about/decor-peach-1x-dsk-min.png);
+    background-repeat: no-repeat;
+    background-size: 384px 288px;
+    background-position: 710px 542px;
+  }
+
+  .education-text {
+    width: 384px;
+    height: 280px;
+    margin-right: 136px;
+  }
+
+  .role-text {
+    width: 384px;
+    height: 184px;
+  }
+
+  .about-img-decor.change-them {
+    background-image: url(/img/about/decor-blue-1x-dsk-min.png);
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .about-img-decor {
+      background-image: url(/img/about/decor-peach-2x-dsk-min.png);
+      background-size: 384px 288px;
+      background-repeat: no-repeat;
+      background-position: 362px 690px;
+    }
+    .about-img-decor.change-them {
+      background-image: url(/img/about/decor-blue-2x-dsk-min.png);
+    }
+  }
 }
