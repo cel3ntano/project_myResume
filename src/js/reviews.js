@@ -1,6 +1,7 @@
 import axios from 'axios';
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
+import { data } from 'jquery';
 import Swiper from 'swiper';
 import 'swiper/css';
 import { Keyboard } from 'swiper/modules';
@@ -23,6 +24,7 @@ const reviewsList = document.querySelector('.reviews__list');
 async function getReviews() {
   try {
     const data = await getData();
+    console.log(data);
     renderReviews(data);
   } catch (error) {
     renderReviews([]);
@@ -32,7 +34,7 @@ getReviews();
 
 function renderReviews(reviews) {
   if (reviews.length === 0) {
-    reviewsList.innerHTML = '<p>Not found</p>';
+    reviewsList.innerHTML = '<p class="non_info">Not found</p>';
     return;
   }
 
@@ -49,6 +51,23 @@ function renderReviews(reviews) {
           alt="${review.author}"
          />
        <h3 class="reviews__h3">${review.author}</h3>
+       <div class="reviews__stars">
+        <svg width="16" height="16">
+          <use class="star__icon" href="../img/icons.svg#icon-star"></use>
+        </svg>
+        <svg width="16" height="16">
+          <use class="star__icon" href="../img/icons.svg#icon-star"></use>
+        </svg>
+        <svg width="16" height="16">
+          <use class="star__icon" href="../img/icons.svg#icon-star"></use>
+        </svg>
+        <svg width="16" height="16">
+          <use class="star__icon" href="../img/icons.svg#icon-star"></use>
+        </svg>
+        <svg width="16" height="16">
+          <use class="star__icon" href="../img/icons.svg#icon-star"></use>
+        </svg>
+      </div>
        </div>
       </div>
     </li>`;

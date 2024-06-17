@@ -20,7 +20,6 @@
 .reviews__card__container {
   display: flex;
   flex-direction: column;
-  /* align-items: flex-end; */
   justify-content: space-between;
   height: 100%;
 }
@@ -49,6 +48,16 @@
   font-weight: 300;
   line-height: 1.5;
   letter-spacing: 0.03em;
+}
+
+.reviews__stars {
+  display: flex;
+  justify-content: space-between;
+  gap: 4px;
+}
+.star__icon {
+  fill: #fece3c;
+  stroke: var(--Black);
 }
 
 .reviews__arrow {
@@ -98,7 +107,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1280px) {
   .reviews__h2 {
     margin-bottom: 80px;
   }
@@ -106,4 +115,12 @@
   .reviews__arrow {
     gap: 24px;
   }
+}
+.non_info {
+  width: 100%;
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  color: var(--Black);
 }
