@@ -50,7 +50,7 @@
 .bio-text-item:not(:first-child) {
   margin-bottom: 24px;
 }
-/* 
+
 .learn-more-button {
   display: inline-block;
   padding: 10px 20px;
@@ -66,8 +66,8 @@
 }
 
 .learn-more-button:hover {
-  background-color: var(--Accent-hover-secondary);
-} */
+  background-color: var(--Accent-hover);
+}
 
 .education-text {
   margin-bottom: 40px;

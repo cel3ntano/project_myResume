@@ -81,6 +81,7 @@
   border: 1px solid var(--Button);
   stroke: var(--Black);
   fill: transparent;
+  transition: all 0.2s ease;
 }
 
 .reviews__arrow-left:hover,
@@ -91,6 +92,11 @@
 .disabled_btn {
   border: 1px solid var(--Button-disabled);
   stroke: var(--Arrow-disabled);
+  cursor: default;
+}
+
+.disabled_btn:hover {
+  background-color: transparent;
 }
 
 .swiper-button-next,

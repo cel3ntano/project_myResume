@@ -25,7 +25,7 @@ const reviewsList = document.querySelector('.reviews__list');
 async function getReviews() {
   try {
     const data = await getData();
-    console.log(data);
+    // console.log(data);
     renderReviews(data);
   } catch (error) {
     renderReviews([]);

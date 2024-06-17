@@ -93,7 +93,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
-  transition: all 0.3s ease;
+  transition: all 0.5s ease;
 }
 
 .dark-theme {
@@ -188,8 +188,7 @@ body {
   overflow-x: hidden;
 }
 
-/*? -------------- Background ------------- */
-/*! ----- Ну мне лично нравится )))) ---- */
+/* -------------- Background ------------- */
 /* 
 body {
   background-image: url(/img/hero/mob-peach-2x.png);
