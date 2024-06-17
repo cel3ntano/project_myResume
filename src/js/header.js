@@ -2,8 +2,13 @@ const burgerOpen = document.querySelector('.switch-open-burger');
 const burgerClose = document.querySelector('.switch-close-burger');
 const navList = document.querySelector('.nav-list');
 const nav = document.querySelector('.header-nav');
+<<<<<<< Updated upstream
 export const body = document.body;
 export const upLink = document.querySelector('.section-up-link');
+=======
+const body = document.body;
+const upLink = document.querySelector('.up-link');
+>>>>>>> Stashed changes
 const headerContainer = document.querySelector('.header > .container');
 
 const toggleHeaderBc = () => {
@@ -35,7 +40,7 @@ const changeBc = () => {
   const scrollPosition = window.scrollY || window.pageYOffset;
   if (scrollPosition > 350) {
     headerContainer.classList.remove('header-background');
-    upLink.style.display = 'flex';
+    upLink.style.display = 'block';
   } else {
     headerContainer.classList.add('header-background');
     upLink.style.display = 'none';
