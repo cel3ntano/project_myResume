@@ -49,7 +49,6 @@ async function fechPost(submit) {
   try {
     const response = await axios.post('/requests', submit);
     openModal(response.data);
-    // resetValidation();
   } catch ({ message }) {
     iziToast.warning({
       message: message,
@@ -178,8 +177,6 @@ function resetValidation() {
   const commentTextarea = document.getElementById('comment');
   const commentError = document.getElementById('comment-error');
   const validIcon = document.querySelector('.valid-icon');
-
-  console.log('reset');
 
   emailInput.classList.remove('valid', 'invalid');
   emailError.style.display = 'none';
