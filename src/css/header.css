@@ -167,6 +167,10 @@
 }
 
 .up-link {
+  position: fixed;
+  right: 30px;
+  bottom: 50px;
+  z-index: 9999;
   text-align: center;
   display: none;
   width: 44px;
@@ -273,7 +277,8 @@
   }
 
   .up-link {
-    transform: translateX(30px);
+    bottom: 80px;
+    right: 40px;
   }
 }
 
@@ -281,5 +286,9 @@
   .header > .container,
   .section-up-link {
     max-width: 1280px;
+  }
+  .up-link {
+    bottom: 90px;
+    right: 60px;
   }
 }

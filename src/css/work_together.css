@@ -48,7 +48,6 @@
   position: relative;
 }
 
-
 .contact-form-list {
   color: var(--Black, #292929);
   transition: background-color 0.3s;
@@ -93,7 +92,6 @@
   display: flex;
   flex-wrap: wrap;
   row-gap: 32px;
-
 }
 
 .order-input {
@@ -115,6 +113,7 @@
 }
 
 .textarea {
+  resize: none;
   width: 100%;
   padding: 16px;
   border: 1px solid transparent;
@@ -193,7 +192,7 @@ button[type='submit']:hover {
   color: var(--Black, #292929);
 }
 
-.order-input.valid~.valid-icon {
+.order-input.valid ~ .valid-icon {
   display: block;
 }
 
@@ -210,8 +209,6 @@ button[type='submit']:hover {
   top: 95%;
   margin-top: 3px;
 }
-
-
 
 /* modal */
 
@@ -312,7 +309,6 @@ button[type='submit']:hover {
     margin-bottom: 60px;
   }
 
-
   button[type='submit'] {
     width: 173px;
   }
@@ -337,11 +333,9 @@ button[type='submit']:hover {
     background-size: cover;
   }
 
-
-
   @media screen and (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
     #work-together .decor-bg {
       background-image: url(/img/work_together/work-peach-tab-2x.png);
     }
@@ -353,8 +347,8 @@ button[type='submit']:hover {
   }
 
   @media screen and (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
     #work-together .decor-bg.change-them {
       background-image: url(/img/work_together/work-blue-tab-2x.png);
     }
@@ -396,7 +390,6 @@ button[type='submit']:hover {
     display: flex;
     justify-content: left;
     align-items: center;
-
   }
 
   .flex1280 {
@@ -436,11 +429,9 @@ button[type='submit']:hover {
     background-size: cover;
   }
 
-
-
   @media screen and (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
     #work-together .decor-bg {
       background-image: url(/img/work_together/work-peach-main-2x.png);
     }
@@ -452,8 +443,8 @@ button[type='submit']:hover {
   }
 
   @media screen and (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
     #work-together .decor-bg.change-them {
       background-image: url(/img/work_together/work-blue-main-2x.png);
     }

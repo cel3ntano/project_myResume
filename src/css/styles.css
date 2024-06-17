@@ -86,7 +86,7 @@
   --accent-6: #de4f69;
 
   color: var(--Black);
-  background-color: var(--White);
+  background: var(--White);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -94,6 +94,11 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
   transition: all 0.5s ease;
+
+  /* body {
+    background: var(--White);
+    transition: background 0.2s ease;
+  } */
 }
 
 .dark-theme {
@@ -127,7 +132,11 @@
   --accent-6: #f7546d;
 
   color: var(--Black);
-  background-color: var(--White);
+  background: var(--White);
+
+  /* body {
+    background: var(--White);
+  } */
 }
 
 .visually-hidden {
@@ -182,12 +191,6 @@
     padding: 0 32px;
   }
 }
-
-/* html,
-body {
-  overflow-x: hidden;
-} */
-
 /* -------------- Background ------------- */
 /* 
 body {
