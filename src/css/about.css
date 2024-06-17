@@ -18,15 +18,16 @@
 }
 
 .benef-peach {
-  border-radius: 16px;
+  border-radius: 25px;
 }
 
 .benef-blue {
-  border-radius: 16px;
+  border-radius: 25px;
 }
 
 .bio-text {
   margin-bottom: 40px;
+  position: relative;
 }
 
 .about-subtitle {
@@ -41,14 +42,32 @@
 
 .bio-text-item {
   font-weight: 300;
-  font-size: 16px;
   letter-spacing: 0.03em;
   color: var(--Black);
+  margin-bottom: 1em;
 }
 
 .bio-text-item:not(:first-child) {
   margin-bottom: 24px;
 }
+/* 
+.learn-more-button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px 0;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  background-color: var(--Accent-primary);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.learn-more-button:hover {
+  background-color: var(--Accent-hover-secondary);
+} */
 
 .education-text {
   margin-bottom: 40px;
@@ -63,7 +82,6 @@
 
 .education-list-item {
   font-weight: 300;
-  font-size: 16px;
   letter-spacing: 0.03em;
   color: var(--Black);
   position: relative;
@@ -90,7 +108,6 @@
 
 .role-list-item {
   font-weight: 300;
-  font-size: 16px;
   letter-spacing: 0.03em;
   color: var(--Black);
   position: relative;
@@ -128,8 +145,8 @@
   }
 
   .about-img {
-    margin-top: 408px;
-    margin-right: 32px;
+    margin: 408px 32px 60px 0;
+    /* margin: 148px 32px 60px 0; */
   }
 
   .bio-text {
@@ -168,7 +185,7 @@
     background-image: url(/img/about/decor-peach-1x-tab-min.png);
     background-repeat: no-repeat;
     background-size: 336px 252px;
-    background-position: 362px 690px;
+    background-position: 364px 728px;
   }
 
   .about-img-decor.change-them {
@@ -182,7 +199,7 @@
       background-image: url(/img/about/decor-peach-2x-tab-min.png);
       background-size: 336px 252px;
       background-repeat: no-repeat;
-      background-position: 362px 690px;
+      background-position: 364px 728px;
     }
     .about-img-decor.change-them {
       background-image: url(/img/about/decor-blue-2x-tab-min.png);
@@ -194,8 +211,8 @@
 
 @media screen and (min-width: 1280px) {
   .about-img {
-    margin-top: 312px;
-    margin-right: 136px;
+    margin: 312px 136px 80px 208px;
+    /* margin: 110px 136px 80px 208px; */
   }
 
   .bio-text {
@@ -207,13 +224,14 @@
     background-image: url(/img/about/decor-peach-1x-dsk-min.png);
     background-repeat: no-repeat;
     background-size: 384px 288px;
-    background-position: 710px 542px;
+    background-position: 835px 562px;
   }
 
   .education-text {
     width: 384px;
     height: 280px;
     margin-right: 136px;
+    margin-left: 208px;
   }
 
   .role-text {
@@ -232,7 +250,7 @@
       background-image: url(/img/about/decor-peach-2x-dsk-min.png);
       background-size: 384px 288px;
       background-repeat: no-repeat;
-      background-position: 362px 690px;
+      background-position: 835px 562px;
     }
     .about-img-decor.change-them {
       background-image: url(/img/about/decor-blue-2x-dsk-min.png);
