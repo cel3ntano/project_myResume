@@ -31,7 +31,6 @@ async function getReviews() {
     renderReviews([]);
   }
 }
-getReviews();
 
 function renderReviews(reviews) {
   if (reviews.length === 0) {
@@ -122,4 +121,24 @@ swiper.on('reachBeginning', () => {
 swiper.on('reachEnd', () => {
   btnNext.classList.add('disabled_btn');
   btnPrev.classList.remove('disabled_btn');
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+  const swiperContainer = document.querySelector('.reviews__swiper');
+
+  const observer = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          getReviews();
+          observer.unobserve(swiperContainer);
+        }
+      });
+    },
+    {
+      rootMargin: '0px 0px 50px 0px',
+    }
+  );
+
+  observer.observe(swiperContainer);
 });
