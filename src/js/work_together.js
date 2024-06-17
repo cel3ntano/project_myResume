@@ -1,6 +1,7 @@
 import axios from 'axios';
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
+import { upLink } from './header';
 
 const form = document.querySelector('.orrder-form-js');
 const modal = document.querySelector('.modal-work-js');
@@ -21,8 +22,9 @@ function openModal({ title, message }) {
   closeModalButton.addEventListener('click', closeModal);
   modal.addEventListener('click', closeBackdropClick);
   modal.classList.remove('visually-hidden');
+  upLink.style.display = 'none';
   document.body.classList.add('body-no-scroll');
-
+  console.log(upLink);
   modalRoot.innerHTML = `<h2 class="modal-work-text">${title}</h2>
       <p class="modal-work-text-p">${message}</p>`;
 }
@@ -33,6 +35,7 @@ function closeModal() {
   modal.removeEventListener('click', closeBackdropClick);
   modal.classList.add('visually-hidden');
   document.body.classList.remove('body-no-scroll');
+  upLink.style.display = 'flex';
 }
 
 function closeKeyboardClick(e) {
