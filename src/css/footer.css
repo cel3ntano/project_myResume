@@ -1,8 +1,9 @@
-footer.section {
-  padding: 40px 0 24px;
+footer .container {
+  padding-top: 40px;
+  padding-bottom: 24px;
 }
 
-.footer-container {
+.footer-content {
   display: flex;
   flex-direction: column;
   gap: 32px;
@@ -68,7 +69,7 @@ footer.section {
 }
 
 @media screen and (min-width: 1280px) {
-  .footer-container {
+  .footer-content {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
