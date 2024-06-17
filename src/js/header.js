@@ -2,7 +2,7 @@ const burgerOpen = document.querySelector('.switch-open-burger');
 const burgerClose = document.querySelector('.switch-close-burger');
 const navList = document.querySelector('.nav-list');
 const nav = document.querySelector('.header-nav');
-const body = document.body;
+export const body = document.body;
 export const upLink = document.querySelector('.up-link');
 const headerContainer = document.querySelector('.header > .container');
 
@@ -35,10 +35,10 @@ const changeBc = () => {
   const scrollPosition = window.scrollY || window.pageYOffset;
   if (scrollPosition > 350) {
     headerContainer.classList.remove('header-background');
-    upLink.style.display = 'block';
+    upLink.classList.add('up-link-active')
   } else {
     headerContainer.classList.add('header-background');
-    upLink.style.display = 'none';
+    upLink.classList.remove('up-link-active')
   }
 };
 
