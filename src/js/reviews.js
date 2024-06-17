@@ -5,6 +5,7 @@ import { data } from 'jquery';
 import Swiper from 'swiper';
 import 'swiper/css';
 import { Keyboard } from 'swiper/modules';
+import spriteSvg from '../img/icons.svg';
 
 axios.defaults.baseURL = 'https://portfolio-js.b.goit.study/api';
 
@@ -53,19 +54,19 @@ function renderReviews(reviews) {
        <h3 class="reviews__h3">${review.author}</h3>
        <div class="reviews__stars">
         <svg width="16" height="16">
-          <use class="star__icon" href="../img/icons.svg#icon-star"></use>
+          <use class="star__icon" href="${spriteSvg}#icon-star"></use>
         </svg>
         <svg width="16" height="16">
-          <use class="star__icon" href="../img/icons.svg#icon-star"></use>
+          <use class="star__icon" href="${spriteSvg}#icon-star"></use>
         </svg>
         <svg width="16" height="16">
-          <use class="star__icon" href="../img/icons.svg#icon-star"></use>
+          <use class="star__icon" href="${spriteSvg}#icon-star"></use>
         </svg>
         <svg width="16" height="16">
-          <use class="star__icon" href="../img/icons.svg#icon-star"></use>
+          <use class="star__icon" href="${spriteSvg}#icon-star"></use>
         </svg>
         <svg width="16" height="16">
-          <use class="star__icon" href="../img/icons.svg#icon-star"></use>
+          <use class="star__icon" href="${spriteSvg}#icon-star"></use>
         </svg>
       </div>
        </div>
