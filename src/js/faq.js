@@ -28,8 +28,7 @@ new Accordion('.accordion-container', {
         elements.forEach(element => {
             if (element !== currentElement) {
                 element.style.backgroundColor = 'var(--White)';
-                element.style.transition.background = 'var(--White)';
-
+                element.style.transition = 'background 250ms ease';
                 element.classList.remove('open');
             }
         });

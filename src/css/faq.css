@@ -37,20 +37,20 @@
     background: url(../img/faq/faq-peach.png), var(--White);
     background-size: 526px 408px;
     background-repeat: no-repeat;
-    background-position: 32px 612px;
+    background-position: 32px 430px;
   }
   .background.change-them {
     background: url(../img/faq/faq-blue.png), var(--White);
     background-size: 526px 408px;
     background-repeat: no-repeat;
-    background-position: 32px 612px;
+    background-position: 32px 430px;
   }
 }
 .faq-list-item.open {
   background: var(--Accent-secondary);
 }
 
-.ac {
+.accordion-list .ac {
   display: flex;
   padding: 48px 24px 24px;
   flex-direction: column;
@@ -60,10 +60,10 @@
   border-radius: 16px;
   background-color: var(--White);
   transition: background 0.25s ease;
-  margin-top: 0 !important;
-  border: none !important;
+  margin-top: 0;
+  border: none;
 }
-.ac::after {
+.accordion-list .ac::after {
   position: absolute;
   content: "";
   bottom: 0;
@@ -73,60 +73,72 @@
   height: 1px;
   background: #ccc;
 }
-.ac .ac-trigger {
-  color: var(--Black, #292929) !important;
-  font: bold 18px "Poppins", sans-serif !important;
+.accordion-list .ac .ac-trigger {
+  color: var(--Black);
+  font: bold 18px "Poppins", sans-serif;
   display: flex;
   gap: 16px;
   line-height: 1.55;
   letter-spacing: 0.02em;
   text-transform: uppercase;
-  padding: 0 !important;
+  padding: 0;
+}
+.accordion-list .ac .ac-trigger:focus {
+  color: currentColor;
 }
 @media screen and (min-width: 768px) {
-  .ac .ac-trigger {
-    font: bold 20px "Poppins", sans-serif !important;
+  .accordion-list .ac .ac-trigger {
+    font: bold 20px "Poppins", sans-serif;
     letter-spacing: 0.025em;
   }
 }
-.ac .ac-text {
-  color: var(--Black) !important;
-  font: 16px "Poppins", sans-serif !important;
-  font-weight: 300 !important;
-  letter-spacing: 0.03em;
-  padding: 0 !important;
+@media screen and (min-width: 768px) {
+  .accordion-list .ac .ac-trigger {
+    width: 488px;
+  }
 }
-
-.faq-list-item {
+.accordion-list .ac .ac-text {
+  color: var(--Black);
+  font: 16px "Poppins", sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.03em;
+  padding: 0;
+}
+.accordion-list .faq-list-item {
   display: flex;
   position: relative;
 }
-.faq-list-item .icon-button-faq-down,
-.faq-list-item .icon-button-faq-up {
+.accordion-list .faq-list-item .icon-button-faq-down,
+.accordion-list .faq-list-item .icon-button-faq-up {
   position: absolute;
   top: 48px;
   right: 24px;
 }
-.faq-list-item .icon-button-faq-down use {
+.accordion-list .faq-list-item .icon-button-faq-down use {
   fill: var(--Black);
 }
-.faq-list-item .icon-button-faq-up use {
+.accordion-list .faq-list-item .icon-button-faq-up use {
   fill: var(--Black);
 }
-.faq-list-item .icon-button-faq-down {
+.accordion-list .faq-list-item .icon-button-faq-down {
   display: none;
 }
-.faq-list-item .icon-button-faq-up {
+.accordion-list .faq-list-item .icon-button-faq-up {
   display: none;
 }
-.faq-list-item .open {
+.accordion-list .faq-list-item .open {
   display: block;
 }
-
-.ac.is-active > .ac-header .ac-trigger::after {
-  content: "" !important;
+.accordion-list .ac.is-active > .ac-header .ac-trigger::after {
+  content: "";
 }
-
-.ac .ac-trigger::after {
-  content: "" !important;
+.accordion-list .ac .ac-trigger::after {
+  content: "";
+}
+.accordion-list .ac .ac-panel .ac-text {
+  color: var(--Black);
+  font: 16px "Poppins", sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.03em;
+  padding: 0;
 }/*# sourceMappingURL=faq.css.map */
