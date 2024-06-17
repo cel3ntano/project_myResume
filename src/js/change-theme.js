@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
     toggleSwitcherClass();
     toggleBodyClass();
     togglePoints();
-    togglePictures();
+    // togglePictures();
   }
 });
 
