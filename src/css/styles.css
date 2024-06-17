@@ -86,14 +86,19 @@
   --accent-6: #de4f69;
 
   color: var(--Black);
-  background-color: var(--White);
+  background: var(--White);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
-  transition: all 0.3s ease;
+  transition: all 0.5s ease;
+
+  /* body {
+    background: var(--White);
+    transition: background 0.2s ease;
+  } */
 }
 
 .dark-theme {
@@ -127,7 +132,11 @@
   --accent-6: #f7546d;
 
   color: var(--Black);
-  background-color: var(--White);
+  background: var(--White);
+
+  /* body {
+    background: var(--White);
+  } */
 }
 
 .visually-hidden {
@@ -141,6 +150,10 @@
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.hidden {
+  display: none;
 }
 
 .section {
@@ -179,8 +192,12 @@
   }
 }
 
-/*? -------------- Background ------------- */
-/*! ----- Ну мне лично нравится )))) ---- */
+/* html,
+body {
+  overflow-x: hidden;
+} */
+
+/* -------------- Background ------------- */
 /* 
 body {
   background-image: url(/img/hero/mob-peach-2x.png);

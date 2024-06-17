@@ -117,26 +117,25 @@ function loadProjects() {
   const end = start + itemsLoad;
   const projectsToLoad = projects.slice(start, end);
 
-  projectsToLoad.forEach(project => {
-    const li = document.createElement('li');
-    li.classList.add('projects-item');
-
-    li.innerHTML = `
+  const markup = projectsToLoad
+    .map(
+      ({ imgSrc, imgSrcSet, alt, tech, title, link }) => `
+    <li class="projects-item">
       <img
         class="project-img"
-        srcset="${project.imgSrcSet}"
-        src="${project.imgSrc}"
-        alt="${project.alt}"
+        srcset="${imgSrcSet}"
+        src="${imgSrc}"
+        alt="${alt}"
       />
-      <p class="project-text">${project.tech}</p>
+      <p class="project-text">${tech}</p>
       <div class="projects-wrap">
         <div class="projects-subtitle-wrap">
-          <h3 class="projects-subtitle">${project.title}</h3>
+          <h3 class="projects-subtitle">${title}</h3>
         </div>
         <div class="project-link-wrap">
             <a
               class="project-link"
-              href="${project.link}"
+              href="${link}"
               target="_blank"
               rel="noopener noreferrer"
               >VISIT
@@ -146,9 +145,18 @@ function loadProjects() {
             </a>
           </div>
       </div>
-    `;
+    </li>
+  `
+    )
+    .join('');
 
-    projectList.appendChild(li);
+  projectList.insertAdjacentHTML('beforeend', markup);
+  const projectCard = document.querySelector('.projects-item');
+  const cardHeight = projectCard.getBoundingClientRect().height;
+  window.scrollBy({
+    left: 0,
+    top: cardHeight * 0.5,
+    behavior: 'smooth',
   });
 
   currentIndex++;

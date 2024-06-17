@@ -1,9 +1,11 @@
 import axios from 'axios';
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
+import { data } from 'jquery';
 import Swiper from 'swiper';
 import 'swiper/css';
 import { Keyboard } from 'swiper/modules';
+import spriteSvg from '../img/icons.svg';
 
 axios.defaults.baseURL = 'https://portfolio-js.b.goit.study/api';
 
@@ -23,16 +25,16 @@ const reviewsList = document.querySelector('.reviews__list');
 async function getReviews() {
   try {
     const data = await getData();
+    // console.log(data);
     renderReviews(data);
   } catch (error) {
     renderReviews([]);
   }
 }
-getReviews();
 
 function renderReviews(reviews) {
   if (reviews.length === 0) {
-    reviewsList.innerHTML = '<p>Not found</p>';
+    reviewsList.innerHTML = '<p class="non_info">Not found</p>';
     return;
   }
 
@@ -49,6 +51,23 @@ function renderReviews(reviews) {
           alt="${review.author}"
          />
        <h3 class="reviews__h3">${review.author}</h3>
+       <div class="reviews__stars">
+        <svg width="16" height="16">
+          <use class="star__icon" href="${spriteSvg}#icon-star"></use>
+        </svg>
+        <svg width="16" height="16">
+          <use class="star__icon" href="${spriteSvg}#icon-star"></use>
+        </svg>
+        <svg width="16" height="16">
+          <use class="star__icon" href="${spriteSvg}#icon-star"></use>
+        </svg>
+        <svg width="16" height="16">
+          <use class="star__icon" href="${spriteSvg}#icon-star"></use>
+        </svg>
+        <svg width="16" height="16">
+          <use class="star__icon" href="${spriteSvg}#icon-star"></use>
+        </svg>
+      </div>
        </div>
       </div>
     </li>`;
@@ -102,4 +121,24 @@ swiper.on('reachBeginning', () => {
 swiper.on('reachEnd', () => {
   btnNext.classList.add('disabled_btn');
   btnPrev.classList.remove('disabled_btn');
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+  const swiperContainer = document.querySelector('.reviews__swiper');
+
+  const observer = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          getReviews();
+          observer.unobserve(swiperContainer);
+        }
+      });
+    },
+    {
+      rootMargin: '0px 0px 50px 0px',
+    }
+  );
+
+  observer.observe(swiperContainer);
 });

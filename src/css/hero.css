@@ -13,6 +13,20 @@
   padding: 0 20px 16px;
 }
 
+.hover {
+  box-shadow: inset 0 0 0 0 var(--Black);
+  color: var(--Black);
+  margin: 0 -0.25rem;
+  padding: 0 0.25rem;
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  border-radius: 4px;
+}
+
+.hover:hover {
+  box-shadow: inset 110px 0 0 0 var(--Accent-hover-secondary);
+  color: var(--Black);
+}
+
 .hero-back {
   position: relative;
   padding: 184px 0 16px 0;
@@ -50,7 +64,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: 1.25;
-  letter-spacing: 1.8px;
+  letter-spacing: 0.03em;
 }
 
 .hero-title-upper {
@@ -110,7 +124,7 @@
   gap: 12px;
   font-size: 18px;
   line-height: 1.55;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.03em;
   position: relative;
   transition: transform 1s ease;
   height: 100%;
@@ -140,7 +154,7 @@
   text-align: center;
   font-size: 18px;
   line-height: 1.55;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.03em;
 }
 .hero-info-text-span {
   color: var(--Accent-primary);
@@ -217,31 +231,12 @@
     align-items: center;
     justify-content: end;
   }
-  /* 
-  .hero-social-item {
-    font-weight: 300;
-    line-height: 1.5;
-    letter-spacing: 0.5px;
-    text-transform: none;
-  } */
 
   .hero-social-item {
     font-weight: 300;
     line-height: 1.5;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.03em;
     text-transform: none;
-    box-shadow: inset 0 0 0 0 var(--Black);
-    color: var(--Black);
-    margin: 0 -0.25rem;
-    padding: 0 0.25rem;
-    transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    border-radius: 4px;
-    font-size: 18px;
-  }
-
-  .hero-social-item:hover {
-    box-shadow: inset 110px 0 0 0 var(--Accent-primary);
-    color: var(--White);
   }
 
   .hero-button {
@@ -256,7 +251,7 @@
   }
 
   .hero-button-link {
-    letter-spacing: 0.5px;
+    letter-spacing: 0.03em;
     font-size: 20px;
     line-height: 1.6;
     transition: transform 1.2s ease;
@@ -281,7 +276,7 @@
     font-size: 36px;
     font-weight: 500;
     line-height: 1.33;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.03em;
   }
 }
 

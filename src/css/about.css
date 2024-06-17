@@ -51,7 +51,9 @@
   margin-bottom: 24px;
 }
 
+
 .load-more-button {
+
   display: inline-block;
   padding: 10px 20px;
   margin: 10px 0;
@@ -64,7 +66,10 @@
   transition: background-color 0.3s;
 }
 
+
 .load-more-button:hover {
+
+
   background-color: var(--Accent-hover);
 }
 
