@@ -75,8 +75,11 @@
 }
 .accordion-list .ac .ac-trigger {
   color: var(--Black);
-  font: bold 18px "Poppins", sans-serif;
+  font: bold 20px "Poppins", sans-serif;
+  font-weight: 400;
   display: flex;
+  font-size: 20px;
+  font-weight: 400;
   gap: 16px;
   line-height: 1.55;
   letter-spacing: 0.02em;
@@ -88,7 +91,6 @@
 }
 @media screen and (min-width: 768px) {
   .accordion-list .ac .ac-trigger {
-    font: bold 20px "Poppins", sans-serif;
     letter-spacing: 0.025em;
   }
 }
@@ -96,13 +98,6 @@
   .accordion-list .ac .ac-trigger {
     width: 488px;
   }
-}
-.accordion-list .ac .ac-text {
-  color: var(--Black);
-  font: 16px "Poppins", sans-serif;
-  font-weight: 300;
-  letter-spacing: 0.03em;
-  padding: 0;
 }
 .accordion-list .faq-list-item {
   display: flex;
@@ -114,11 +109,10 @@
   top: 48px;
   right: 24px;
 }
-.accordion-list .faq-list-item .icon-button-faq-down use {
-  fill: var(--Black);
-}
+.accordion-list .faq-list-item .icon-button-faq-down use,
 .accordion-list .faq-list-item .icon-button-faq-up use {
-  fill: var(--Black);
+  stroke: var(--Black);
+  fill: transparent;
 }
 .accordion-list .faq-list-item .icon-button-faq-down {
   display: none;
@@ -137,7 +131,7 @@
 }
 .accordion-list .ac .ac-panel .ac-text {
   color: var(--Black);
-  font: 16px "Poppins", sans-serif;
+  font: bold 16px "Poppins", sans-serif;
   font-weight: 300;
   letter-spacing: 0.03em;
   padding: 0;
