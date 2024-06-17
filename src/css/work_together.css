@@ -97,7 +97,7 @@
 }
 
 .container-input-form {
-  margin-bottom: 15px;
+  margin-bottom: 27px;
   display: flex;
   flex-wrap: wrap;
   row-gap: 32px;
@@ -111,6 +111,7 @@
   background: var(--Accent-tertiary);
   box-sizing: border-box;
   width: 100%;
+  color: var(--Black, #292929);
 }
 
 .order-input::placeholder {
@@ -127,6 +128,7 @@
   border: 1px solid transparent;
   border-radius: 8px;
   background: var(--Accent-tertiary);
+  color: var(--Black, #292929);
 }
 
 .textarea::placeholder {
@@ -158,7 +160,7 @@ button[type='submit'] {
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
-  line-height: 1.3;
+  line-height: 1.5;
   letter-spacing: 0.03em;
   cursor: pointer;
   transition: background-color 0.3s;
@@ -190,12 +192,13 @@ button[type='submit']:hover {
 .order-input.invalid,
 .textarea.invalid {
   border-color: red;
-  color: var(--Black #292929);
+  color: var(--Black, #292929);
 }
 
 .order-input.valid,
 .textarea.valid {
   border-color: green;
+  color: var(--Black, #292929);
 }
 
 .order-input.valid~.valid-icon {
@@ -320,9 +323,9 @@ button[type='submit']:hover {
     margin-bottom: 60px;
   }
 
-  .container-input-form {
+  /* .container-input-form {
     margin-bottom: 32px;
-  }
+  } */
 
   button[type='submit'] {
     width: 173px;
