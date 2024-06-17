@@ -80,8 +80,11 @@
 
         .ac-trigger {
             color: var(--Black);
-            font: bold 18px 'Poppins', sans-serif;
+            font: bold 20px 'Poppins', sans-serif;
+            font-weight: 400;
             display: flex;
+            font-size: 20px;
+            font-weight: 400;
             gap: 16px;
             line-height: 1.55;
             letter-spacing: 0.02em;
@@ -93,7 +96,6 @@
             }
 
             @media screen and (min-width: 768px) {
-                font: bold 20px 'Poppins', sans-serif;
                 letter-spacing: 0.025em;
             }
 
@@ -102,13 +104,7 @@
             }
         }
 
-        .ac-text {
-            color: var(--Black);
-            font: 16px 'Poppins', sans-serif;
-            font-weight: 300;
-            letter-spacing: 0.03em;
-            padding: 0;
-        }
+
     }
 
     .faq-list-item {
@@ -122,14 +118,11 @@
             right: 24px;
         }
 
-        .icon-button-faq-down use {
-            fill: var(--Black);
-        }
-
+        .icon-button-faq-down use,
         .icon-button-faq-up use {
-            fill: var(--Black);
+            stroke: var(--Black);
+            fill: transparent;
         }
-
 
         .icon-button-faq-down {
             display: none;
@@ -154,7 +147,7 @@
 
     .ac .ac-panel .ac-text {
         color: var(--Black);
-        font: 16px "Poppins", sans-serif;
+        font: bold 16px 'Poppins', sans-serif;
         font-weight: 300;
         letter-spacing: 0.03em;
         padding: 0;
