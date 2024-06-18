@@ -23,7 +23,8 @@ function openModal({ title, message }) {
   closeModalButton.addEventListener('click', closeModal);
   modal.addEventListener('click', closeBackdropClick);
   modal.classList.remove('visually-hidden');
-  upLink.style.display = 'none';
+  upLink.classList.remove('up-link-active');
+
   body.classList.toggle('modal-open');
   document.documentElement.classList.toggle('modal-open');
   modalRoot.innerHTML = `<h2 class="modal-work-text">${title}</h2>
@@ -36,7 +37,7 @@ function closeModal() {
   modal.removeEventListener('click', closeBackdropClick);
   modal.classList.add('visually-hidden');
   // document.body.classList.remove('body-no-scroll');
-  upLink.style.display = 'block';
+  upLink.classList.add('up-link-active');
   body.classList.toggle('modal-open');
   document.documentElement.classList.toggle('modal-open');
 }
