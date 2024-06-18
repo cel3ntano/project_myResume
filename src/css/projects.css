@@ -1,6 +1,6 @@
 .projects-title {
   text-align: center;
-  color: var(--Black);
+  color: var(--Text-color);
   font-family: Impact;
   font-size: 52px;
   line-height: 1.23;
@@ -23,7 +23,7 @@
 
 .project-text {
   margin-top: 12px;
-  color: var(--Black);
+  color: var(--Text-color);
   font-weight: 300;
   line-height: 1.5;
   letter-spacing: 0.03em;
@@ -34,7 +34,7 @@
 }
 
 .projects-subtitle {
-  color: var(--Black);
+  color: var(--Text-color);
   font-family: Poppins;
   font-size: 32px;
   font-weight: 500;
@@ -61,7 +61,7 @@
   padding: 12px 24px;
   border-radius: 8px;
   background-color: var(--Accent-tertiary);
-  color: var(--Black);
+  color: var(--Text-color);
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.03em;
@@ -84,7 +84,7 @@
   display: block;
   border: none;
   border-bottom: 1px solid var(--Accent-primary);
-  color: var(--Black);
+  color: var(--Text-color);
   font-family: Poppins;
   font-size: 18px;
   line-height: 1.55;

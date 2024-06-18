@@ -1,6 +1,6 @@
 .header {
   width: 100%;
-  background-color: var(--White);
+  background-color: var(--Back-color);
   z-index: 99999;
   position: fixed;
   transition: all 0.2s linear;
@@ -27,7 +27,7 @@
 .switch-open-burger {
   /* animation-duration: 250ms; */
   background: none;
-  stroke: var(--White);
+  stroke: var(--Back-color);
   text-align: center;
   border: none;
   display: none;
@@ -37,7 +37,7 @@
 .switch-close-burger {
   background: none;
   /* animation-duration: 250ms; */
-  stroke: var(--White);
+  stroke: var(--Back-color);
   text-align: center;
   border: none;
   display: none;
@@ -49,7 +49,7 @@
 }
 
 .icon-burger {
-  stroke: var(--Black);
+  stroke: var(--Text-color);
 }
 
 .header-title {
@@ -66,12 +66,12 @@
 .header-nav {
   display: none;
   height: 100vh;
-  background: url(../img/header/dark-burger-them.png), var(--White);
+  background: url(../img/header/dark-burger-them.png), var(--Back-color);
   background-repeat: no-repeat;
 }
 
 .header-nav.change-them {
-  background: url(../img/header/light-burger-them.png), var(--White);
+  background: url(../img/header/light-burger-them.png), var(--Back-color);
 }
 
 .active-nav {
@@ -84,7 +84,7 @@
 }
 
 .nav-item {
-  color: var(--Black);
+  color: var(--Text-color);
   text-align: center;
 }
 
@@ -193,7 +193,7 @@
 
 .up-link:hover {
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  background-color: var(--White);
+  background-color: var(--Back-color);
   scale: 1.05;
 }
 
@@ -201,13 +201,13 @@
   (min-resolution: 144dpi),
   (min-resolution: 2dppx) {
   .header-nav {
-    background: url(../img/header/dark-burger-them-x2.png), var(--White);
+    background: url(../img/header/dark-burger-them-x2.png), var(--Back-color);
     background-size: 332px 704px;
     background-repeat: no-repeat;
   }
 
   .header-nav.change-them {
-    background: url(../img/header/light-burger-them-x2.png), var(--White);
+    background: url(../img/header/light-burger-them-x2.png), var(--Back-color);
     background-size: 332px 704px;
   }
 }

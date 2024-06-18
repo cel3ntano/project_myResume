@@ -56,25 +56,27 @@
   line-height: 24px;
   font-weight: 400;
 
-  --White: #f0f0f0;
-  --Black: #292929;
-  --Error: #e74a3b;
-  --Accent-hover: #009156; /* buttons bg */
-  --Accent-hover-secondary: rgba(0, 176, 103, 0.3); /* hero */
-  --Accent-hover-tertiary: rgba(0, 176, 103, 0.6); /* hero */
-  --Accent-hover-quaternary: #bbb; /* projects */
+  --Back-color: #f0f0f0;
+  --Text-color: #292929;
 
-  --Accent-quaternary: rgba(0, 176, 104, 0.1); /* benefits icons bg */
+  --Accent-primary: #286099;
+  --Accent-secondary: #bccbdf;
   --Accent-tertiary: #e4e5e6;
-  --Accent-secondary: #bcdfd1;
-  --Accent-primary: #00b068;
+  --Accent-quaternary: rgba(0, 109, 176, 0.1); /* benefits icons bg */
+
+  --Error: #e74a3b;
+
+  --Accent-hover: #006191; /* buttons bg */
+  --Accent-hover-secondary: rgba(0, 106, 176, 0.3); /* hero */
+  --Accent-hover-tertiary: rgba(0, 126, 176, 0.6); /* hero */
+  --Accent-hover-quaternary: #bbbbbb; /* projects */
 
   --Button: rgba(41, 41, 41, 0.3);
   --Button-disabled: rgba(41, 41, 41, 0.1); /* reviews */
   --Arrow-disabled: #cccccc; /* reviews */
 
   /* header */
-  --Arrow-fill: #3b05ff;
+  --Arrow-fill: #0550ff;
   --Arrow-border: #0863ffe1;
   --Arrow-shadow: #0069d2c7;
 
@@ -85,8 +87,8 @@
   --accent-5: #a13997;
   --accent-6: #de4f69;
 
-  color: var(--Black);
-  background: var(--White);
+  color: var(--Text-color);
+  background: var(--Back-color);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -96,33 +98,35 @@
   transition: all 0.5s ease;
 
   /* body {
-    background: var(--White);
+    background: var(--Back-color);
     transition: background 0.2s ease;
   } */
 }
 
 .dark-theme {
-  --Black: #f0f0f0;
-  --White: #1e2023;
-  --Error: #f05748;
-  --Accent-hover: #009156; /* buttons bg */
-  --Accent-hover-secondary: rgba(20, 197, 124, 0.3); /* hero */
-  --Accent-hover-tertiary: rgba(20, 197, 124, 0.6); /* hero */
-  --Accent-hover-quaternary: #3b3f45; /* projects */
+  --Text-color: #f0f0f0;
+  --Back-color: #1e2023;
 
-  --Accent-quaternary: rgba(20, 197, 124, 0.1); /* benefits icons bg */
-  --Accent-tertiary: #2a2d32;
-  --Accent-secondary: #204136;
-  --Accent-primary: #14c57c;
+  --Accent-primary: #f75462;
+  --Accent-secondary: #412030;
+  --Accent-tertiary: #322a2b;
+  --Accent-quaternary: rgba(197, 20, 88, 0.1); /* benefits icons bg */
+
+  --Error: #e8596c;
+
+  --Accent-hover: #910035; /* buttons bg */
+  --Accent-hover-secondary: rgba(197, 20, 88, 0.331); /* hero */
+  --Accent-hover-tertiary: rgba(197, 20, 64, 0.6); /* hero */
+  --Accent-hover-quaternary: #453b3f; /* projects */
 
   /* header */
   --Arrow-fill: #ff464c;
   --Arrow-border: #ff677e;
-  --Arrow-shadow: #ff405ddb;
+  --Arrow-shadow: #ff4063db;
 
-  --Button: #2a2d32;
-  --Button-disabled: #2a2d32; /* reviews */
-  --Arrow-disabled: #383a3d; /* reviews */
+  --Button: #3d3034;
+  --Button-disabled: #322a2e; /* reviews */
+  --Arrow-disabled: #3d383a; /* reviews */
 
   --accent-1: #0e1311;
   --accent-2: #26bdb0;
@@ -131,11 +135,11 @@
   --accent-5: #c156d6;
   --accent-6: #f7546d;
 
-  color: var(--Black);
-  background: var(--White);
+  color: var(--Text-color);
+  background: var(--Back-color);
 
   /* body {
-    background: var(--White);
+    background: var(--Back-color);
   } */
 }
 
@@ -195,57 +199,3 @@ body {
     padding: 0 32px;
   }
 }
-/* -------------- Background ------------- */
-/* 
-body {
-  background-image: url(/img/hero/mob-peach-2x.png);
-  background-attachment: fixed;
-  background-size: 320px 704px;
-  animation: animateBackground 40s linear infinite;
-}
-
-body.change-them {
-  background-image: url(/img/hero/mob-blue-2x.png);
-  background-color: transparent;
-}
-
-@keyframes animateBackground {
-  0% {
-    background-position: 0 0;
-  }
-  25% {
-    background-position: 50% 25%;
-  }
-  50% {
-    background-position: 75% 50%;
-  }
-  75% {
-    background-position: 25% 75%;
-  }
-  100% {
-    background-position: 100% 100%;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  body {
-    background-image: url(/img/hero/tab-peach.png);
-    background-size: 704px 972px;
-  }
-
-  body.change-them {
-    background-image: url(/img/hero/tab-blue.png);
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  body {
-    background-image: url(/img/hero/peach.png);
-    background-size: 1216px 772px;
-    animation: animateBackground 60s linear infinite;
-  }
-
-  body.change-them {
-    background-image: url(/img/hero/blue.png);
-  }
-} */

@@ -15,7 +15,7 @@
   line-height: 1.25;
   letter-spacing: 0.016em;
   text-transform: uppercase;
-  color: var(--Black);
+  color: var(--Text-color);
   background-color: var(--Accent-secondary);
 }
 
@@ -80,7 +80,7 @@
   width: 8px;
   height: 8px;
   border-radius: 2px;
-  background-color: var(--Black);
+  background-color: var(--Text-color);
 }
 
 @keyframes marqueeLine {

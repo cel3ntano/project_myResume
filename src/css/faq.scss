@@ -1,5 +1,5 @@
 .faq-title {
-    color: var(--Black);
+    color: var(--Text-color);
     font-family: Impact;
     font-size: 52px;
     line-height: 1.23;
@@ -34,14 +34,14 @@
     }
 
     .background {
-        background: url(../img/faq/faq-peach.png), var(--White);
+        background: url(../img/faq/faq-peach.png), var(--Back-color);
         background-size: 526px 408px;
         background-repeat: no-repeat;
         background-position: 32px 430px;
     }
 
     .background.change-them {
-        background: url(../img/faq/faq-blue.png), var(--White);
+        background: url(../img/faq/faq-blue.png), var(--Back-color);
         background-size: 526px 408px;
         background-repeat: no-repeat;
         background-position: 32px 430px;
@@ -62,7 +62,7 @@
         align-items: flex-start;
         gap: 24px;
         border-radius: 16px;
-        background-color: var(--White);
+        background-color: var(--Back-color);
         transition: background 0.25s ease;
         margin-top: 0;
         border: none;
@@ -79,7 +79,7 @@
         }
 
         .ac-trigger {
-            color: var(--Black);
+            color: var(--Text-color);
             font: bold 20px 'Poppins', sans-serif;
             font-weight: 400;
             display: flex;
@@ -120,7 +120,7 @@
 
         .icon-button-faq-down use,
         .icon-button-faq-up use {
-            stroke: var(--Black);
+            stroke: var(--Text-color);
             fill: transparent;
         }
 
@@ -146,7 +146,7 @@
     }
 
     .ac .ac-panel .ac-text {
-        color: var(--Black);
+        color: var(--Text-color);
         font: bold 16px 'Poppins', sans-serif;
         font-weight: 300;
         letter-spacing: 0.03em;

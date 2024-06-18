@@ -11,7 +11,7 @@ footer .container {
 }
 
 .title-footer {
-  color: var(--Black);
+  color: var(--Text-color);
   font-family: Impact;
   font-size: 32px;
   font-weight: 400;
@@ -31,7 +31,7 @@ footer .container {
 }
 
 .item-footer {
-  color: var(--Black);
+  color: var(--Text-color);
   font-weight: 300;
   line-height: 1.5;
   letter-spacing: 0.03em;

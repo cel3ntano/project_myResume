@@ -5,7 +5,7 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-right: auto;
-  color: var(--Black);
+  color: var(--Text-color);
   margin-bottom: 40px;
 }
 
@@ -36,14 +36,14 @@
   line-height: 1.25;
   letter-spacing: 0.02em;
   text-transform: uppercase;
-  color: var(--Black);
+  color: var(--Text-color);
   margin-bottom: 32px;
 }
 
 .bio-text-item {
   font-weight: 300;
   letter-spacing: 0.03em;
-  color: var(--Black);
+  color: var(--Text-color);
   margin-bottom: 1em;
 }
 
@@ -82,7 +82,7 @@
 .education-list-item {
   font-weight: 300;
   letter-spacing: 0.03em;
-  color: var(--Black);
+  color: var(--Text-color);
   position: relative;
 }
 .education-list-item::before,
@@ -108,7 +108,7 @@
 .role-list-item {
   font-weight: 300;
   letter-spacing: 0.03em;
-  color: var(--Black);
+  color: var(--Text-color);
   position: relative;
 }
 
