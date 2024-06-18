@@ -3,6 +3,7 @@
   background-color: var(--White);
   z-index: 99999;
   position: fixed;
+  transition: all 0.2s linear;
 }
 
 .header > .container {

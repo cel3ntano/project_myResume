@@ -34,7 +34,7 @@ const goToSection = e => {
 
 const changeBc = () => {
   const scrollPosition = window.scrollY || window.pageYOffset;
-  if (scrollPosition > 150) {
+  if (scrollPosition > 100) {
     headerContainer.classList.remove('header-background');
     upLink.classList.add('up-link-active');
   } else {
