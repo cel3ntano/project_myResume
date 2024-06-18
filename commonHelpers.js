@@ -32,6 +32,8 @@ import{A as oe,a as ne,b as w,S as ce,K as ie,i as re}from"./assets/vendor-37492
         srcset="${_}"
         src="${i}"
         alt="${k}"
+        width="830"
+        height="480"
       />
       <p class="project-text">${x}</p>
       <div class="projects-wrap">
