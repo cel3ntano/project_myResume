@@ -159,7 +159,8 @@ function loadInitialProjects() {
   }
 }
 
-loadInitialProjects();
+document.addEventListener('DOMContentLoaded', loadInitialProjects);
+// loadInitialProjects();
 
 function loadProjects() {
   const start = currentIndex * itemsLoad;
