@@ -277,7 +277,7 @@ button[type='submit']:hover {
 }
 
 .modal-open {
-  overflow: hidden;
+  overflow-y: hidden;
 }
 
 @media screen and (min-width: 768px) {
