@@ -82,8 +82,11 @@
   color: var(--Accent-primary);
 }
 
-.hero-image {
+.hero-photo-span {
   margin-bottom: 180px;
+}
+
+.hero-image {
   display: block;
 }
 
@@ -215,7 +218,7 @@
     bottom: 168px;
   }
 
-  .hero-image {
+  .hero-photo-span {
     margin-bottom: 40px;
     margin-left: 368px;
   }
@@ -327,7 +330,7 @@
     width: 597px;
   }
 
-  .hero-image {
+  .hero-photo-span {
     margin: 88px 0 80px 416px;
     vertical-align: top;
     display: inline-block;
