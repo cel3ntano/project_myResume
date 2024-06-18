@@ -46,5 +46,4 @@ const changeBc = () => {
 burgerOpen.addEventListener('click', toggleImage);
 burgerClose.addEventListener('click', toggleImage);
 navList.addEventListener('click', goToSection);
-
 document.addEventListener('scroll', changeBc);

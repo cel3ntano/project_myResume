@@ -101,6 +101,15 @@
   } */
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
+.no-overflow-x {
+  overflow-x: auto;
+}
+
 .dark-theme {
   --Black: #f0f0f0;
   --White: #1e2023;

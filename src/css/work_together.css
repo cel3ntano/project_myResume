@@ -276,7 +276,7 @@ button[type='submit']:hover {
   stroke: var(--Black, #292929);
 }
 
-.body-no-scroll {
+.modal-open {
   overflow: hidden;
 }
 
