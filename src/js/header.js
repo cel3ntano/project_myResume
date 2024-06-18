@@ -18,7 +18,6 @@ const toggleImage = e => {
 
   upLink.classList.toggle('up-link-active');
   body.classList.toggle('toggle-scroll');
-  // body.classList.toggle('modal-open');
   burgerClose.classList.toggle('active-btn');
   burgerOpen.classList.toggle('active-btn');
   nav.classList.toggle('active-nav');

@@ -25,7 +25,6 @@ function openModal({ title, message }) {
   modal.classList.remove('visually-hidden');
   upLink.style.display = 'none';
   body.classList.toggle('modal-open');
-  // document.body.classList.add('body-no-scroll');
   modalRoot.innerHTML = `<h2 class="modal-work-text">${title}</h2>
       <p class="modal-work-text-p">${message}</p>`;
 }
