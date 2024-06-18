@@ -126,6 +126,8 @@ function loadProjects() {
         srcset="${imgSrcSet}"
         src="${imgSrc}"
         alt="${alt}"
+        width="830"
+        height="480"
       />
       <p class="project-text">${tech}</p>
       <div class="projects-wrap">
