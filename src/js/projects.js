@@ -112,6 +112,55 @@ loadMoreBtn.addEventListener('click', loadProjects);
 let currentIndex = 0;
 const itemsLoad = 3;
 
+function loadInitialProjects() {
+  const start = currentIndex * itemsLoad;
+  const end = start + itemsLoad;
+  const projectsToLoad = projects.slice(start, end);
+
+  const markup = projectsToLoad
+    .map(
+      ({ imgSrc, imgSrcSet, alt, tech, title, link }) => `
+    <li class="projects-item">
+      <img
+        class="project-img"
+        srcset="${imgSrcSet}"
+        src="${imgSrc}"
+        alt="${alt}"
+      />
+      <p class="project-text">${tech}</p>
+      <div class="projects-wrap">
+        <div class="projects-subtitle-wrap">
+          <h3 class="projects-subtitle">${title}</h3>
+        </div>
+        <div class="project-link-wrap">
+          <a
+            class="project-link"
+            href="${link}"
+            target="_blank"
+            rel="noopener noreferrer"
+          >VISIT
+            <svg width="24" height="24">
+              <use href="${spriteSvg}#icon-arrow-project"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </li>
+  `
+    )
+    .join('');
+
+  projectList.insertAdjacentHTML('beforeend', markup);
+
+  currentIndex++;
+
+  if (currentIndex * itemsLoad >= projects.length) {
+    loadMoreBtn.style.display = 'none';
+  }
+}
+
+loadInitialProjects();
+
 function loadProjects() {
   const start = currentIndex * itemsLoad;
   const end = start + itemsLoad;
@@ -133,17 +182,17 @@ function loadProjects() {
           <h3 class="projects-subtitle">${title}</h3>
         </div>
         <div class="project-link-wrap">
-            <a
-              class="project-link"
-              href="${link}"
-              target="_blank"
-              rel="noopener noreferrer"
-              >VISIT
-              <svg width="24" height="24">
-                <use href="${spriteSvg}#icon-arrow-project"></use>
-              </svg>
-            </a>
-          </div>
+          <a
+            class="project-link"
+            href="${link}"
+            target="_blank"
+            rel="noopener noreferrer"
+          >VISIT
+            <svg width="24" height="24">
+              <use href="${spriteSvg}#icon-arrow-project"></use>
+            </svg>
+          </a>
+        </div>
       </div>
     </li>
   `
@@ -151,11 +200,12 @@ function loadProjects() {
     .join('');
 
   projectList.insertAdjacentHTML('beforeend', markup);
-  const projectCard = document.querySelector('.projects-item');
+
+  const projectCard = document.querySelector('.projects-item:last-child');
   const cardHeight = projectCard.getBoundingClientRect().height;
   window.scrollBy({
     left: 0,
-    top: cardHeight * 0.5,
+    top: cardHeight * 2.5,
     behavior: 'smooth',
   });
 
@@ -165,5 +215,3 @@ function loadProjects() {
     loadMoreBtn.style.display = 'none';
   }
 }
-
-loadProjects();
