@@ -22,28 +22,17 @@
         </a>
       </h2>
       <label for="theme-btn" class="theme">
-        <input
-          type="checkbox"
-          name="switchTheme"
-          id="theme-btn"
-          class="visually-hidden theme-btn"
-        />
+        <input type="checkbox" name="switchTheme" id="theme-btn" class="visually-hidden theme-btn" />
         <span class="switch-theme"></span>
       </label>
-      <button class="switch-open-burger active-btn" data-img="icon-open-burger">
+      <button class="switch-open-burger active-btn" data-img="icon-open-burger" aria-label="Open menu">
         <svg class="icon icon-burger" width="32" height="32">
-          <use
-            class="inform-item-icon"
-            href="/project_myResume/assets/icons-4fa5f8a9.svg#icon-open-burger"
-          ></use>
+          <use class="inform-item-icon" href="/project_myResume/assets/icons-4fa5f8a9.svg#icon-open-burger"></use>
         </svg>
       </button>
-      <button class="switch-close-burger" data-img="icon-open-burger">
+      <button class="switch-close-burger" data-img="icon-open-burger" aria-label="Close menu">
         <svg class="icon icon-burger" width="32" height="32">
-          <use
-            class="inform-item-icon"
-            href="/project_myResume/assets/icons-4fa5f8a9.svg#icon-close-burger"
-          ></use>
+          <use class="inform-item-icon" href="/project_myResume/assets/icons-4fa5f8a9.svg#icon-close-burger"></use>
         </svg>
       </button>
     </div>
@@ -61,13 +50,11 @@
       </ul>
     </nav>
   </div>
-  <a href="#hero" class="up-link up-link-active"
-    ><svg class="icon icon-up-arrow" width="30" height="38">
+  <a href="#hero" class="up-link up-link-active"><svg class="icon icon-up-arrow" width="30" height="38">
       <use class="inform-item-icon" href="/project_myResume/assets/icons-4fa5f8a9.svg#icon-up-arrow"></use>
     </svg>
   </a>
 </header>
-
     <main>
       <section class="hero section" id="hero">
   <div class="container">
@@ -701,17 +688,14 @@
       <div class="reviews__list swiper-wrapper"></div>
       <div class="reviews__arrow">
         <div>
-          <button
-            type="button"
-            class="swiper-button-prev reviews__arrow-left disabled_btn"
-          >
+          <button type="button" class="swiper-button-prev reviews__arrow-left disabled_btn" aria-label="Previous">
             <svg width="24" height="24">
               <use href="/project_myResume/assets/icons-4fa5f8a9.svg#icon-button-review-left"></use>
             </svg>
           </button>
         </div>
         <div>
-          <button type="button" class="swiper-button-next reviews__arrow-right">
+          <button type="button" class="swiper-button-next reviews__arrow-right" aria-label="Next">
             <svg width="24" height="24">
               <use href="/project_myResume/assets/icons-4fa5f8a9.svg#icon-button-review-right"></use>
             </svg>
@@ -721,9 +705,7 @@
     </div>
   </div>
 </section>
-
       <section class="work-together section" id="work-together">
-
   <div class="container">
     <div class="decor-bg change-them"></div>
     <h2 class="work-together-div">let's <span>work together</span></h2>
@@ -757,31 +739,34 @@
       </div>
       <form class="orrder-form orrder-form-js">
         <div class="container-input-form">
-          <label class="email-user"></label>
+          <label class="email-user" for="email-user"></label>
           <div class="email-input-wrapper">
             <input type="email" name="email" pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$" required
-              class="order-input" id="email-user" placeholder="Your email*" />
+              class="order-input" id="email-user" placeholder="Your email*" autocomplete="on" />
             <svg class="valid-icon" width="16" height="16">
               <use href="/project_myResume/assets/icons-4fa5f8a9.svg#icon-input_success"></use>
             </svg>
-            <p class="error-message" id="email-error">Invalid email, try again</p>
+            <p class="error-message" id="email-error">
+              Invalid email, try again
+            </p>
           </div>
-          <div class="error-message-wrapper ">
-            <label class="comment"></label>
+          <div class="error-message-wrapper">
+            <label class="comment" for="comment"></label>
             <textarea name="message" id="comment" rows="5" class="textarea" placeholder="Message"></textarea>
-            <p class="error-message" id="comment-error">Message cannot be empty</p>
+            <p class="error-message" id="comment-error">
+              Message cannot be empty
+            </p>
           </div>
         </div>
 
         <button type="submit">SEND MESSAGE</button>
       </form>
-
     </div>
   </div>
 
   <div class="modal-work modal-work-js visually-hidden">
     <div class="modal-content-work">
-      <button class="close-modal-work close-modal-work-js">
+      <button class="close-modal-work close-modal-work-js" aria-label="Close modal">
         <svg class="modal-icon-work" width="24" height="24">
           <use href="/project_myResume/assets/icons-4fa5f8a9.svg#icon-close-modal"></use>
         </svg>
@@ -789,8 +774,6 @@
       <div data-modal-root-js></div>
     </div>
   </div>
-
-
 </section>
     </main>
     <footer class="section" id="contacts">
