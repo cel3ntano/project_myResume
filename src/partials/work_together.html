@@ -1,5 +1,4 @@
 <section class="work-together section" id="work-together">
-
   <div class="container">
     <div class="decor-bg change-them"></div>
     <h2 class="work-together-div">let's <span>work together</span></h2>
@@ -33,31 +32,34 @@
       </div>
       <form class="orrder-form orrder-form-js">
         <div class="container-input-form">
-          <label class="email-user"></label>
+          <label class="email-user" for="email-user"></label>
           <div class="email-input-wrapper">
             <input type="email" name="email" pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$" required
-              class="order-input" id="email-user" placeholder="Your email*" />
+              class="order-input" id="email-user" placeholder="Your email*" autocomplete="on" />
             <svg class="valid-icon" width="16" height="16">
               <use href="./img/icons.svg#icon-input_success"></use>
             </svg>
-            <p class="error-message" id="email-error">Invalid email, try again</p>
+            <p class="error-message" id="email-error">
+              Invalid email, try again
+            </p>
           </div>
-          <div class="error-message-wrapper ">
-            <label class="comment"></label>
+          <div class="error-message-wrapper">
+            <label class="comment" for="comment"></label>
             <textarea name="message" id="comment" rows="5" class="textarea" placeholder="Message"></textarea>
-            <p class="error-message" id="comment-error">Message cannot be empty</p>
+            <p class="error-message" id="comment-error">
+              Message cannot be empty
+            </p>
           </div>
         </div>
 
         <button type="submit">SEND MESSAGE</button>
       </form>
-
     </div>
   </div>
 
   <div class="modal-work modal-work-js visually-hidden">
     <div class="modal-content-work">
-      <button class="close-modal-work close-modal-work-js">
+      <button class="close-modal-work close-modal-work-js" aria-label="Close modal">
         <svg class="modal-icon-work" width="24" height="24">
           <use href="./img/icons.svg#icon-close-modal"></use>
         </svg>
@@ -65,6 +67,4 @@
       <div data-modal-root-js></div>
     </div>
   </div>
-
-
 </section>
