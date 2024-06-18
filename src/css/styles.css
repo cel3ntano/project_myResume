@@ -143,7 +143,14 @@
   } */
 }
 
+/* html,
 body {
+  width: 100vw;
+} */
+
+body,
+html {
+  width: 100%;
   overflow-x: hidden;
 }
 
@@ -199,3 +206,24 @@ body {
     padding: 0 32px;
   }
 }
+
+/* aos */
+
+[data-aos] {
+  pointer-events: none;
+}
+.aos-animate {
+  pointer-events: auto;
+}
+.aos-init[data-aos][data-aos].aos-animate {
+  transform: unset;
+}
+
+/* @media (max-width: 767px) {
+  [data-aos='fade-right'],
+  [data-aos='fade-left'],
+  [data-aos='fade-down'] {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+} */

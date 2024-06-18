@@ -176,7 +176,7 @@ button[type='submit']:hover {
   top: 50%;
   transform: translateY(-50%);
   display: none;
-  fill: var(--Accent-primary);
+  fill: #23b761;
   /* z-index: 0; */
 }
 
@@ -278,6 +278,7 @@ button[type='submit']:hover {
 
 .modal-open {
   overflow-y: hidden;
+  overflow-x: auto;
 }
 
 @media screen and (min-width: 768px) {

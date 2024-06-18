@@ -4,8 +4,14 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import 'animate.css';
 
-AOS.init({
-  once: true,
+// AOS.init({
+//   startEvent: 'load',
+//   once: true,
+// });
+
+AOS.init({ once: true });
+window.addEventListener('load', () => {
+  AOS.refresh();
 });
 
 function smoothScroll(target) {

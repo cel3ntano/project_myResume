@@ -25,6 +25,7 @@ function openModal({ title, message }) {
   modal.classList.remove('visually-hidden');
   upLink.style.display = 'none';
   body.classList.toggle('modal-open');
+  document.documentElement.classList.toggle('modal-open');
   modalRoot.innerHTML = `<h2 class="modal-work-text">${title}</h2>
       <p class="modal-work-text-p">${message}</p>`;
 }
@@ -37,6 +38,7 @@ function closeModal() {
   // document.body.classList.remove('body-no-scroll');
   upLink.style.display = 'block';
   body.classList.toggle('modal-open');
+  document.documentElement.classList.toggle('modal-open');
 }
 
 function closeKeyboardClick(e) {
