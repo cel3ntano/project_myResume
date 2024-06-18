@@ -16,7 +16,7 @@ const toggleImage = e => {
   e.preventDefault();
   toggleHeaderBc();
 
-  upLink.classList.toggle('up-link-active');
+  // upLink.classList.toggle('up-link-active');
   body.classList.toggle('toggle-scroll');
   burgerClose.classList.toggle('active-btn');
   burgerOpen.classList.toggle('active-btn');
