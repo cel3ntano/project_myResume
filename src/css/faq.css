@@ -90,6 +90,7 @@
   letter-spacing: 0.02em;
   text-transform: uppercase;
   padding: 0;
+  width: 224px;
 }
 .accordion-list .ac .ac-trigger:focus {
   color: currentColor;
@@ -101,9 +102,16 @@
 }
 @media screen and (min-width: 768px) {
   .accordion-list .ac .ac-trigger {
+    width: 600px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .accordion-list .ac .ac-trigger {
     width: 488px;
   }
 }
+
 .accordion-list .faq-list-item {
   display: flex;
   position: relative;
