@@ -16,12 +16,19 @@ const toggleImage = e => {
   e.preventDefault();
   toggleHeaderBc();
 
-  // upLink.classList.toggle('up-link-active');
   body.classList.toggle('toggle-scroll');
   document.documentElement.classList.toggle('toggle-scroll');
   burgerClose.classList.toggle('active-btn');
   burgerOpen.classList.toggle('active-btn');
   nav.classList.toggle('active-nav');
+  if (
+    body.classList.contains('toggle-scroll') &&
+    upLink.classList.contains('up-link-active')
+  ) {
+    upLink.classList.remove('up-link-active');
+  } else {
+    updateScrollUpVisibility();
+  }
 };
 
 const goToSection = e => {
@@ -37,9 +44,16 @@ const changeBc = () => {
   const scrollPosition = window.scrollY || window.pageYOffset;
   if (scrollPosition > 100) {
     headerContainer.classList.remove('header-background');
-    upLink.classList.add('up-link-active');
   } else {
     headerContainer.classList.add('header-background');
+  }
+};
+
+const updateScrollUpVisibility = () => {
+  const scrollPosition = window.scrollY || window.pageYOffset;
+  if (scrollPosition > 1000) {
+    upLink.classList.add('up-link-active');
+  } else {
     upLink.classList.remove('up-link-active');
   }
 };
@@ -48,3 +62,6 @@ burgerOpen.addEventListener('click', toggleImage);
 burgerClose.addEventListener('click', toggleImage);
 navList.addEventListener('click', goToSection);
 document.addEventListener('scroll', changeBc);
+window.addEventListener('scroll', updateScrollUpVisibility);
+// document.addEventListener('scroll', updateScrollUpVisibility);
+updateScrollUpVisibility();
