@@ -139,6 +139,11 @@
   } */
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;

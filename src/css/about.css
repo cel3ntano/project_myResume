@@ -113,10 +113,14 @@
 }
 
 .benef-peach {
+  width: 100%;
+
   display: block;
 }
 
 .benef-blue {
+  width: 100%;
+
   display: none;
 }
 
