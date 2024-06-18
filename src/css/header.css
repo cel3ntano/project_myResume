@@ -1,15 +1,18 @@
-.header > .container {
-  z-index: 999;
-  text-align: center;
-  position: fixed;
-  max-width: 100%;
+.header {
   width: 100%;
-  left: 50%;
-  transform: translate(-50%);
   background-color: var(--White);
+  z-index: 99999;
+  position: fixed;
 }
 
-.container.header-background {
+.header > .container {
+  text-align: center;
+  max-width: 100%;
+  width: 100%;
+  max-width: 360px;
+}
+
+.header.header-background {
   background: transparent;
 }
 
